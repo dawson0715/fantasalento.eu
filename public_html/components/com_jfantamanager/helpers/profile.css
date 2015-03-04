@@ -1,0 +1,154 @@
+.dati,.lista{line-height: 25px;}
+
+.lista td{
+    font-weight: bold;
+}
+.lista td.N{
+    color:#747474;
+}
+.lista td.As,.lista td.G,.lista td.Rp{
+    color:#31B004;
+}
+.lista td.A{
+    color:orange;
+}
+.lista td.E,.lista td.Rs, .lista td.Gs{
+    color:#D20E0E;
+}
+
+.dati label,.lista label{font-weight: bold;min-width: 25px;color:#515151;}
+.dati{padding-top: 10px; font-size: 14px;}
+
+.modal{float: right;margin: 5px 0px;}
+
+/*.profile {width: 100%}*/
+
+.profile h2 {
+    background: url("../images/h2_blu.png") no-repeat scroll right top transparent !important;
+    color: #FFFFFF !important; 
+    float: left;
+    font-size: 20px;
+    height: 21px;
+    margin: 0 !important;
+    padding: 4px 0 !important;
+    text-indent: 9px !important;
+    width: 100%;
+}
+
+.statis{
+    width: 100%;
+}
+.statis td{
+    text-align: center;
+}
+.statis td.squadra_nome,.statis td.squadra{
+    text-align: left;
+    text-indent: 5px;
+}
+
+.elem {
+    background: url("../images/element_back.gif") repeat-x scroll left bottom transparent;
+    color: #A6A6A6;
+    float: left;
+    min-height: 94px;
+    width: 400px;
+    padding-bottom:10px;
+    margin: 10px 0px;
+}
+.elem_dx {
+    background: url("../images/element_back.gif") repeat-x scroll left bottom transparent;
+    color: #A6A6A6;
+    float: left;
+    min-height: 94px;
+    width: 260px;
+    padding-bottom:10px;
+    margin: 10px 0px;
+}
+.elem .text {
+    float: left;
+    font-size: 14px;
+    padding: 6px 0;
+    text-align: center;
+    width: 130px;
+}
+.elem .green {
+    border-right: 2px solid #FFFFFF;
+    color: #79C040;
+    float: left;
+    font-size: 34px;
+    text-align: center;
+    width: 130px;
+}
+.elem .red {
+    color: #F62035;
+    float: left;
+    font-size: 34px;
+    text-align: center;
+    width: 130px;
+}
+.elem .init {
+    border-right: 2px solid #FFFFFF;
+    color: #208FF6;
+    float: left;
+    font-size: 34px;
+    text-align: center;
+    width: 130px;
+}
+
+.elem h3{
+    padding: 0px;
+    background: url("../images/h2_orange.png") no-repeat scroll right top transparent !important;
+    border-bottom: 1px solid #D66406 !important;
+    color: #FFFFFF !important;
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px !important;
+    text-indent: 9px !important;
+    text-shadow: 1px 1px 0 #D66406;
+}
+.elem_dx table{margin: 5px;width: 250px;border: 2px solid lightgray}
+.elem_dx table tbody tr,.lista table tbody tr{background-color: white}
+.elem_dx table tbody tr.riga1,.lista table tbody tr.riga1{background-color: #DEDEDE}
+.elem_dx thead,.lista th {
+    background: url("../images/header.gif") repeat-x scroll 0 0 transparent;
+    height: 29px;
+    line-height: 29px;
+    border-right: 1px solid #D3D3D3;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    text-shadow: 1px 1px 0 #959595;
+}
+
+.elem_dx table td {
+    border-right: 1px solid #FFFFFF;
+    padding: 6px 0;
+    text-align: center;
+    color: #535353;
+    font-family: Arial,"Liberation Sans",sans-serif;
+    font-size: 12px;
+    line-height: 1;
+}
+.elem_dx table td.violet{color:darkmagenta;}
+.elem_dx table td.rosso{color:darkred;}
+
+.legenda-2{
+    font-family: Arial,"Liberation Sans",sans-serif;
+    font-size: 12px;
+}
+.legenda-2 dt, .legenda-3 dt {
+    border-bottom: 1px solid #D66406;
+    color: #D66406;
+    font-size: 16px;
+    font-style: italic;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 9px;
+}
+
+.legenda-2 dd {
+    float: left;
+    padding: 0px;
+    width: 20%;
+}

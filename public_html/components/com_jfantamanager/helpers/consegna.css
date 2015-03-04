@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+.ext_top{
+    background-image:URL(../images/div_top.png);
+    height:28px;
+    padding-left:10px;
+    padding-top: 5px
+}
+.ext_mid{
+    background-image:URL(../images/ext_mid.png);
+    height:560px;
+    width:200px;
+}
+.int_mid{
+    background-image:URL(../images/int_mid.png);
+    margin-left:10px;
+    margin-right:10px;
+    padding-left: 7px;
+}
+#lista, #lista tr, #lista td{
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+td .giocatore{
+    color: black;
+    margin-left: 10px;
+    overflow:visible;
+    background-image:URL(../images/nome.png);
+    width:145px;
+    font-size:11px;
+    padding-left:10px;
+    height:20px;
+    margin-bottom:10px;
+    table-layout: fixed;
+    vertical-align:text-top;
+    cursor: pointer;
+}
+td .giocatore_selezionato{
+    color: red;
+    text-decoration: line-through;
+    margin-left: 10px;
+    overflow:visible;
+    background-image:URL(../images/nome.png);
+    width:145px;
+    font-size:11px;
+    padding-left:10px;
+    height:20px;
+    margin-bottom:10px;
+    table-layout: fixed;
+    vertical-align:text-top;
+}
+td .giocatore_panchina{
+    color: blue;
+    text-decoration: line-through;
+    margin-left: 10px;
+    overflow:visible;
+    background-image:URL(../images/nome.png);
+    width:145px;
+    font-size:11px;
+    padding-left:10px;
+    height:20px;
+    margin-bottom:10px;
+    table-layout: fixed;
+    vertical-align:text-top;
+}
+.modulo_ext{
+    background-image: URL(../images/modulo.png);
+    width: 150px;
+    height: 100px;
+    padding: 3px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+.campo{
+    height:100px;
+    color: black;
+    font-size:12px;
+}
+.campo td{
+    text-align: center;
+}
+.campo span,.panchina_in span{
+    background:white;
+    font-size: 15px;
+}
+
+.tooltip{color:red}
+
+.consegnate{margin: 5px 0px;color: black}
+.consegnate p{border: 1px solid lightgray;
+                background: url("../images/title.png") lightgray;
+                margin: 0;
+                padding: 5px 10px;}
+.consegnate td{padding: 7px;}
+
+.sotto {background-color: lightgray;color: black}
+.sotto td{padding: 2px 5px}
+.sotto .D,.sotto .A{background-color: #EFEFEF}
+
+.panchina_in{
+    background-image: url(../images/p_mid.png);
+    height: 200px;
+    margin-left: 15px;
+    float:left;
+    width:420px
+}
+.panchina_in td{
+    padding-top: 15px;
+    text-align: center;
+}
+.panchina_out{
+    height:200px;
+    background-image: url(../images/p_left.png);
+    background-repeat: no-repeat
+}
+.panchina_foot{
+    float:left;
+    background-image: url(../images/p_right.png);
+    width: 15px;
+    height: 200px
+}
+.intesta tr, .intesta td {
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+.msg{
+    background-color: #C3D2E5;
+    color:#0055BB;
+    border-bottom: 3px solid #84A7DB;
+    border-top: 3px solid #84A7DB;
+    margin: 10px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    text-indent: 30px;
+}

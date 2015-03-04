@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+.campo{height:115px;color: black;font-size:12px;}
+.campo td{text-align: center;}
+.campo td:hover{background-color: orangered; cursor: pointer}
+.campo span{background:white;font-size: 11px;width: 100%}
+
+.terreno
+{
+    background-image: URL(/components/com_fanta/images/campo_420.jpg);
+    background-repeat: no-repeat;
+    width: 375px;
+    float: left;
+    height: 480px;
+/*    margin-top: 15px;*/
+    background-color: green;
+}
+.terreno .titolo{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.panchina{width: 300px; height: 112px; font-size: 11px;background-color: white; border:solid #f87501; border-width: 2px}
+.panchina td{width: 25%; text-align: center}
+
+.risultati
+{
+/*    margin-bottom:300px;*/
+    line-height: 142%;
+    font-size: 12px;
+    margin-top:15px;
+    background-color: white;
+    width: 300px;
+    border:1px solid #f87501;
+}
+.risultati .sinistra{text-align: left}
+.risultati tr{background-color: white;}
+.risultati tr:hover{background-color: orangered;}
+.risultati .sinistra{width: 40%;padding-left: 7px;}
+.risultati td{border-bottom:1px solid #f87501; border-right:1px solid #f87501; text-align: center;min-width: 7px}
+.risultati img{height: 12px}
+
+.result{
+    background-color:#339966;
+    display:block;
+    font-size:12px;
+    margin-bottom:5px;}
+.result tr{height:15px;}
+
+.sotto{float:left; margin-right:50px;width:25%;font-size: 11px;line-height: 100%}
+.sotto .D{color:#938238}
+.sotto .C{color:orange}
+.sotto .A{color:#083194}
+.top{height: 480px}

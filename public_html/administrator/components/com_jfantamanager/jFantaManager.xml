@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: helloworld.xml 14 2009-11-02 18:35:20Z chdemko $ -->
+<extension type="component" version="2.5.2" method="upgrade">
+
+	<name>jFantaManager</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>Luglio 2012</creationDate>
+	<author>Daniele Gabrieli</author>
+	<authorEmail>info@fantasalento.it</authorEmail>
+	<authorUrl>http://www.fantasalento.it</authorUrl>
+	<copyright>Copyright Info</copyright>
+	<license>License Info</license>
+	<!--  The version string is recorded in the components table -->
+	<version>0.0.1</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>Componente gestionale FantaCalcio</description>
+
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>jfantamanager.php</filename>
+		<filename>controller.php</filename>
+		<folder>helpers</folder>
+                <folder>images</folder>
+                <folder>models</folder>
+                <folder>tables</folder>
+                <folder>views</folder>
+                <folder>language</folder>
+	</files>
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu>jFantaManager</menu>
+                <submenu>
+			<menu img="components/com_jfantamanager/assets/images/icon-16-jfm-menu-cp.png" alt="COM_JFANTAMANAGER_LEGAS" view="phocaguestbookcp" link="option=com_jfantamanager">COM_JFANTAMANAGER_LEGAS</menu>
+			<menu img="components/com_jfantamanager/assets/images/icon-16-jfm-menu-cp.png" alt="COM_JFANTAMANAGER_SQUADRAS" view="phocaguestbooks" link="option=com_jfantamanager&amp;amp;view=squadras">COM_JFANTAMANAGER_SQUADRAS</menu>
+			<menu img="components/com_jfantamanager/assets/images/icon-16-jfm-menu-guestbook.png" alt="COM_JFANTAMANAGER_CALENDARIOS" view="phocaguestbookbs" link="option=com_jfantamanager&amp;amp;view=calendarios">COM_JFANTAMANAGER_CALENDARIOS</menu>
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>jfantamanager.php</filename>
+			<filename>controller.php</filename>
+                        <folder>assets</folder>
+                        <folder>controllers</folder>
+                        <folder>dati</folder>
+                        <folder>helpers</folder>
+                        <folder>models</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder>
+			<folder>tables</folder>			
+			<folder>views</folder>
+                        <folder>language</folder>
+		</files>
+	</administration>
+
+</extension>
+

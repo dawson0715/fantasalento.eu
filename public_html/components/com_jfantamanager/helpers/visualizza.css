@@ -1,0 +1,106 @@
+.visualizza{ color:#000000; border-left:1px solid lightgrey/*69adf2*/; background-color:white; width: 100%;}
+.visualizza thead,#claz thead {background:url(../images/title.png);background-color: lightgrey; text-align: center; height: 20px;padding:5px;font-weight: bold;}
+.visualizza tr{ height:115px;}
+.visualizza td{border-bottom:1px solid lightgrey; border-right:1px solid lightgrey/*69adf2*/; text-align:center; width: 25%;vertical-align: middle; padding: 5px;}
+.visualizza td.sinistra{ text-align:left; padding-left:2px}
+.visualizza a{text-decoration:none; color:#000000}
+.squadra_logo{max-width: 100px; max-height: 100px}
+.squadra_nome{ line-height: 20px;}
+
+
+table#claz {
+    margin-left:5px;
+    width: 100%;
+}
+
+table#claz tbody tr {
+    background:none repeat scroll 0 0 #D6D6D6;
+    font-size:11px;
+    margin:1px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+table#claz tr .centro {
+    font-size:12px;
+    text-align:left;
+}
+
+table#claz tr .centro a:link, table#claz tr .centro a:visited {
+    color: darkblue;
+}
+
+table#claz .azzurro {
+    background:none repeat scroll 0 0 #EFEFEF;
+    font-size:11px;
+    margin:1px;
+    padding:3px;
+    text-align:center;
+    vertical-align:middle;
+}
+table#claz .nick {
+    font-size:10px;
+    font-style:italic;
+}
+table#claz td{
+    padding:5px;
+    font-size: 12px;
+}
+.squadra {
+    font-size:11px;
+    margin: 3px;
+}
+.squadra a{
+    cursor: pointer;
+    color: #396;
+}
+.elenco{font-size: 11px;line-height: 100%; color:black}
+.elenco .D,.sotto .D,.elenco .A,.sotto .A{color:#555555}
+/*.elenco .A,.sotto .A{color:#083194}*/
+
+.consegnate{margin: 5px 0px;color: black; width: 100%}
+.consegnate p{border: 1px solid lightgray;
+                background: url("../images/title.png") lightgray;
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+                margin: 0;
+                padding: 5px 0;
+                text-align: center;
+}
+.consegnate td{padding: 7px; border: none !important}
+.consegnate tr {border: none !important}
+
+.sotto {width: 100%}
+.sotto tr{background-color: lightgray;color: black}
+.sotto th{font-size: 10px; text-decoration: underline;vertical-align: middle; background-color: #808080;border: 1px solid white;padding: 1px 0px}
+.sotto td{padding: 0px 2px;border: 1px solid white;text-align: center;vertical-align: middle}
+.sotto .bianco{ background-color: white; } 
+.sotto .linea {border-bottom: solid #808080 2px}
+.sotto #giocatore_{color: darkblue;text-align: left;padding: 2px 5px}
+.sotto #giocatore_in{color: darkblue; font-weight: bold;;text-align: left;padding: 2px 5px}
+.sotto #giocatore_out,.sotto #left{color: darkgray; text-decoration: line-through;text-align: left;padding: 2px 5px}
+.sotto img{height: 18px;}
+/*.sotto .D,.sotto .A{background-color: #EFEFEF}*/
+.bordo{border: 1px solid lightgray; padding: 7px;}
+.result {border: 1px solid lightgray;font-size: 25px;font-weight: bold;height: 30px;margin: 8px 0 5px 200px;padding: 5px;text-align: right; width: 90px;background: url("../images/cerchio.png") no-repeat scroll 0 0 transparent}
+#goal{color: red;float: left; margin: -1px 8px;}
+.msg{
+    background-color: #C3D2E5;
+    color:#0055BB;
+    border-bottom: 3px solid #84A7DB;
+    border-top: 3px solid #84A7DB;
+    margin: 10px 0 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: bold;
+    text-indent: 30px;
+}
+.mini{
+    font-size: 11px;
+}
+
+.nome a:link,.nome a:visited {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}

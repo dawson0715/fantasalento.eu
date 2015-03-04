@@ -1,0 +1,7 @@
+[modules]
+Explorer = "", "\\Windows\\Explorer.exe"
+TomTom 7 = "", "\\Storage Card\\Navigator\\TomTom Navigator.exe"
+iGO8 = "",  "\\Storage Card\\iGO8\\iGO8.exe"
+
+
+\\Flash Disk\\myguide\\myguide.exe
