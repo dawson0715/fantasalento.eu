@@ -1,1 +1,163 @@
-<?xml version="1.0" encoding="utf-8"?><form>        <fieldset name='squadra'>            <field                        name="giocatore_id"                          type="text"                        class="readonly"                        label="COM_FANTACALCIO_GIOCATORE_SQUADRA_ID_LABEL"                        description ="COM_FANTACALCIO_GIOCATORE_SQUADRA_ID_DESC"                        size="10"                        default="0"                        readonly="true"                    />            <field                        name="squadra_id"                          type="text"                        class="readonly"                        label="COM_FANTACALCIO_GIOCATORE_ID_LABEL"                        description ="COM_FANTACALCIO_GIOCATORE_ID_DESC"                        size="10"                        default="0"                        readonly="true"                    />        </fieldset>	<fieldset name='giocatore_in'>                <field                    name="pos"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_POS_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_POS_DESC"                    size="10"                    default="0"                    readonly="true"                />                <field                    name="nome"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_NOME_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_NOME_DESC"                    size="10"                    default="0"                    readonly="true"                />                <field                    name="squadra"                      type="text"                    label="COM_FANTACALCIO_GIOCATORE_SQUADRA_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_SQUADRA_DESC"                    size="10"                    default="0"                    class="readonly"                    readonly="true"                />                 <field			name="modifica"			type="radio"			label="COM_FANTACALCIO_GIOCATORE_MODIFICA_LABEL"			description="COM_FANTACALCIO_GIOCATORE_MODIFICA_DESC"                        default="0"		>                    <option value="1">Si</option>                    <option value="0">No</option>                </field>                <field			name="valore_acq"			type="text"                        size="10"			label="COM_FANTACALCIO_GIOCATORE_VALORE_ACQ_LABEL"			description="COM_FANTACALCIO_GIOCATORE_VALORE_ACQ_DESC"		/>                <field			name="data_acq"			type="calendar"                        format="%Y-%m-%d"                        size="10"			label="COM_FANTACALCIO_GIOCATORE_DATA_ACQ_LABEL"			description="COM_FANTACALCIO_GIOCATORE_DATA_ACQ_DESC"		/>                <field                    name="valore_ces"                    type="text"                    size="10"                    label="COM_FANTACALCIO_GIOCATORE_VALORE_CES_LABEL"                    description="COM_FANTACALCIO_GIOCATORE_VALORE_CES_DESC"		/>                <field                    name="data_ces"                    type="calendar"                    format="%Y-%m-%d"                    size="10"                    label="COM_FANTACALCIO_GIOCATORE_DATA_CES_LABEL"                    description="COM_FANTACALCIO_GIOCATORE_DATA_CES_DESC"		/>	</fieldset>        <fieldset name='giocatore_out'>                <field			name="conferma"			type="radio"			label="COM_FANTACALCIO_GIOCATORE_CONFERMA_LABEL"			description="COM_FANTACALCIO_GIOCATORE_CONFERMA_DESC"                        default="0"                >                    <option value="1">Si</option>                    <option value="0">No</option>                </field>		<field                    name="new_giocatore_id"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_ID_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_ID_DESC"                    size="10"                    default=""                    readonly="true"                />                <field                    name="pos"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_POS_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_POS_DESC"                    size="10"                    readonly="true"                />                <field                    name="new_nome"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_NOME_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_NOME_DESC"                    size="10"                    default=""                    readonly="true"                />                <field                    name="new_squadra"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_GIOCATORE_SQUADRA_LABEL"                    description ="COM_FANTACALCIO_GIOCATORE_SQUADRA_DESC"                    size="10"                    readonly="true"                />                <field                    name="new_valore_acq"                    type="text"                    size="10"                    label="COM_FANTACALCIO_GIOCATORE_VALORE_ACQ_LABEL"                    description="COM_FANTACALCIO_GIOCATORE_VALORE_ACQ_DESC"		/>                <field                    name="new_data_acq"                    type="calendar"                    format="%Y-%m-%d"                    size="10"                    label="COM_FANTACALCIO_GIOCATORE_DATA_ACQ_LABEL"                    description="COM_FANTACALCIO_GIOCATORE_DATA_ACQ_DESC"		/>	</fieldset></form>
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset name='squadra'>
+            <field
+                        name="giocatore_id"  
+                        type="text"
+                        class="readonly"
+                        label="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_ID_LABEL"
+                        description ="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_ID_DESC"
+                        size="10"
+                        default="0"
+                        readonly="true"
+                    />
+            <field
+                        name="squadra_id"  
+                        type="text"
+                        class="readonly"
+                        label="COM_JFANTAMANAGER_GIOCATORE_ID_LABEL"
+                        description ="COM_JFANTAMANAGER_GIOCATORE_ID_DESC"
+                        size="10"
+                        default="0"
+                        readonly="true"
+                    />
+        </fieldset>
+	<fieldset name='giocatore_in'>
+                <field
+                    name="pos"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_POS_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_POS_DESC"
+                    size="10"
+                    default="0"
+                    readonly="true"
+                />
+                <field
+                    name="nome"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_NOME_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_NOME_DESC"
+                    size="10"
+                    default="0"
+                    readonly="true"
+                />
+                <field
+                    name="squadra"  
+                    type="text"
+                    label="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_DESC"
+                    size="10"
+                    default="0"
+                    class="readonly"
+                    readonly="true"
+                /> 
+                <field
+			name="modifica"
+			type="radio"
+			label="COM_JFANTAMANAGER_GIOCATORE_MODIFICA_LABEL"
+			description="COM_JFANTAMANAGER_GIOCATORE_MODIFICA_DESC"
+                        default="0"
+		>
+                    <option value="1">Si</option>
+                    <option value="0">No</option>
+                </field>
+                <field
+			name="valore_acq"
+			type="text"
+                        size="10"
+			label="COM_JFANTAMANAGER_GIOCATORE_VALORE_ACQ_LABEL"
+			description="COM_JFANTAMANAGER_GIOCATORE_VALORE_ACQ_DESC"
+		/>
+                <field
+			name="data_acq"
+			type="calendar"
+                        format="%Y-%m-%d"
+                        size="10"
+			label="COM_JFANTAMANAGER_GIOCATORE_DATA_ACQ_LABEL"
+			description="COM_JFANTAMANAGER_GIOCATORE_DATA_ACQ_DESC"
+		/>
+                <field
+                    name="valore_ces"
+                    type="text"
+                    size="10"
+                    label="COM_JFANTAMANAGER_GIOCATORE_VALORE_CES_LABEL"
+                    description="COM_JFANTAMANAGER_GIOCATORE_VALORE_CES_DESC"
+		/>
+                <field
+                    name="data_ces"
+                    type="calendar"
+                    format="%Y-%m-%d"
+                    size="10"
+                    label="COM_JFANTAMANAGER_GIOCATORE_DATA_CES_LABEL"
+                    description="COM_JFANTAMANAGER_GIOCATORE_DATA_CES_DESC"
+		/>
+	</fieldset>
+        <fieldset name='giocatore_out'>
+                <field
+			name="conferma"
+			type="radio"
+			label="COM_JFANTAMANAGER_GIOCATORE_CONFERMA_LABEL"
+			description="COM_JFANTAMANAGER_GIOCATORE_CONFERMA_DESC"
+                        default="0"
+                >
+                    <option value="1">Si</option>
+                    <option value="0">No</option>
+                </field>
+		<field
+                    name="new_giocatore_id"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_ID_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_ID_DESC"
+                    size="10"
+                    default=""
+                    readonly="true"
+                />
+                <field
+                    name="pos"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_POS_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_POS_DESC"
+                    size="10"
+                    readonly="true"
+                />
+                <field
+                    name="new_nome"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_NOME_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_NOME_DESC"
+                    size="10"
+                    default=""
+                    readonly="true"
+                />
+                <field
+                    name="new_squadra"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_LABEL"
+                    description ="COM_JFANTAMANAGER_GIOCATORE_SQUADRA_DESC"
+                    size="10"
+                    readonly="true"
+                />
+                <field
+                    name="new_valore_acq"
+                    type="text"
+                    size="10"
+                    label="COM_JFANTAMANAGER_GIOCATORE_VALORE_ACQ_LABEL"
+                    description="COM_JFANTAMANAGER_GIOCATORE_VALORE_ACQ_DESC"
+		/>
+                <field
+                    name="new_data_acq"
+                    type="calendar"
+                    format="%Y-%m-%d"
+                    size="10"
+                    label="COM_JFANTAMANAGER_GIOCATORE_DATA_ACQ_LABEL"
+                    description="COM_JFANTAMANAGER_GIOCATORE_DATA_ACQ_DESC"
+		/>
+	</fieldset>
+</form>
+

@@ -46,7 +46,7 @@ class jFantaManagerViewSquadras extends JView
 	 */
 	protected function addToolBar()
 	{
-		JToolBarHelper::title(JText::_('COM_FANTACALCIO_MANAGER_SQUADRAS'));
+		JToolBarHelper::title(JText::_('COM_JFANTAMANAGER_MANAGER_SQUADRAS'));
                 JToolBarHelper::custom ('legas.calcola','calcola.png','calcola.png','Calcola',false,false);
                 JToolBarHelper::custom ('legas.recupera','calcola.png','calcola.png','Recupera',false,false);
                 JToolBarHelper::divider();

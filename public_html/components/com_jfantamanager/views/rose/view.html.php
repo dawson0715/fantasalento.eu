@@ -24,8 +24,12 @@ class jFantaManagerViewRose extends JView
 			JError::raiseError(500, implode('<br />', $errors));
 			return false;
 		}
-                $this->squadre  =$squadre;
-                $this->giocatori=$lista;
+		$this->squadre  =$squadre;
+		$this->giocatori=$lista;
+
+
+		$document = &JFactory::getDocument();
+		$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'visualizza.css');
 		// Display the view
 		parent::display($tpl);
 	}

@@ -43,7 +43,7 @@ class jFantaManagerControllerVoto extends JControllerForm
 //            $this->setRedirect( 'index.php?option=com_jfantamanager&view=voto', $msg );
 //            return;
             if (empty($ids)) {
-                    JError::raiseWarning(500, JText::_('COM_FANTACALCIO_VOTO_NO_ITEM_SELECTED'));
+                    JError::raiseWarning(500, JText::_('COM_JFANTAMANAGER_VOTO_NO_ITEM_SELECTED'));
             } else {
                 // Get the model.
                 $model = $this->getModel();
@@ -52,9 +52,9 @@ class jFantaManagerControllerVoto extends JControllerForm
                             JError::raiseWarning(500, $model->getError());
                 } else
                     if ($value == 1){
-                            $this->setMessage(JText::plural('COM_FANTACALCIO_VOTO_POLITICO', $ids[0]));
+                            $this->setMessage(JText::plural('COM_JFANTAMANAGER_VOTO_POLITICO', $ids[0]));
                     } else if ($value == 0){
-                            $this->setMessage(JText::plural('COM_FANTACALCIO_VOTO_UNPOLITICO', $ids[0]));
+                            $this->setMessage(JText::plural('COM_JFANTAMANAGER_VOTO_UNPOLITICO', $ids[0]));
                     }
             }
             $this->setRedirect( 'index.php?option=com_jfantamanager&view=voto&tmpl=component', $msg );

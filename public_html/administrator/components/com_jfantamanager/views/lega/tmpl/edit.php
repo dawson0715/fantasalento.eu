@@ -9,7 +9,7 @@ JHtml::_('behavior.keepalive');
 <form action="<?php echo JRoute::_('index.php?option=com_jfantamanager&layout=edit&id='.(int) $this->item->id); ?>" method="post" name="adminForm">
     <div class="width-60 fltlft">
 	<fieldset class="adminform">
-            <legend><?php echo JText::_( 'COM_FANTACALCIO_GLOBAL_DETAIL' ); ?></legend>
+            <legend><?php echo JText::_( 'COM_JFANTAMANAGER_GLOBAL_DETAIL' ); ?></legend>
 		<ul class="adminformlist">
                     <?php foreach($this->form->getFieldset() as $field): ?>
                     <li><?php echo $field->label;echo $field->input;?></li>

@@ -2,20 +2,20 @@
 	<!-- $Id: login.xml 21521 2011-06-10 22:21:18Z chdemko $ -->
 <form>
 	<fieldset name="default"
-		label="COM_FANTACALCIO_DEFAULT_LABEL"	>
+		label="COM_JFANTAMANAGER_DEFAULT_LABEL"	>
                 <field
                     name="id"
                     type="text"
                     class="readonly"
-                    label="COM_FANTACALCIO_ID_LABEL"
-                    description ="COM_FANTACALCIO_ID_DESC"
+                    label="COM_JFANTAMANAGER_ID_LABEL"
+                    description ="COM_JFANTAMANAGER_ID_DESC"
                     default="0"
                     readonly="true"
                 />
 		<field name="nome"
                         type="text"
-			description="COM_FANTACALCIO_REGISTER_NAME_DESC"
-			label="COM_FANTACALCIO_REGISTER_NAME_LABEL"
+			description="COM_JFANTAMANAGER_REGISTER_NAME_DESC"
+			label="COM_JFANTAMANAGER_REGISTER_NAME_LABEL"
 			required="true"
 			size="30"
 		/>

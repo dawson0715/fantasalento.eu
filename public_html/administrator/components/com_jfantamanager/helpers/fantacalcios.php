@@ -38,19 +38,19 @@ class jFantaManagersHelper
 	public static function addSubmenu($vName)
        {
           JSubMenuHelper::addEntry(
-             JText::_('COM_FANTACALCIO_SUBMENU_LEGAS'),
+             JText::_('COM_JFANTAMANAGER_SUBMENU_LEGAS'),
              'index.php?option=com_jfantamanager&view=legas',
              $vName == 'legas');
           JSubMenuHelper::addEntry(
-             JText::_('COM_FANTACALCIO_SUBMENU_SQUADRAS'),
+             JText::_('COM_JFANTAMANAGER_SUBMENU_SQUADRAS'),
              'index.php?option=com_jfantamanager&view=squadras',
              $vName == 'squadras');
 //          JSubMenuHelper::addEntry(
-//             JText::_('COM_FANTACALCIO_SUBMENU_GIOCATORE'),
+//             JText::_('COM_JFANTAMANAGER_SUBMENU_GIOCATORE'),
 //             'index.php?option=com_jfantamanager&view=giocatore&layout=edit',
 //             $vName == 'giocatore');
           JSubMenuHelper::addEntry(
-             JText::_('COM_FANTACALCIO_SUBMENU_CALENDARIOS'),
+             JText::_('COM_JFANTAMANAGER_SUBMENU_CALENDARIOS'),
              'index.php?option=com_jfantamanager&view=calendarios',
              $vName == 'calendarios');
        }

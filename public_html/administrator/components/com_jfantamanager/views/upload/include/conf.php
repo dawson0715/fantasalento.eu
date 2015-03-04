@@ -51,7 +51,7 @@ $admin_name = 'Administrator';
 //
 // Administrator e-mail address
 //
-$admin_email = 'daniele0715@msn.com';
+$admin_email = 'info@fantasalento.it';
 
 //
 // If your site has the mail function disabled you can use the SMTP e-mailer.
@@ -125,7 +125,7 @@ $cookievalidity = 8760; //hours
 //  STATUS    => array(view,    modown,  delown,  download, mail,    upload,  mkdir,   modall,  delall,  mailall,  webcopy,  validate)
 //                       V        V        V        V         V        V        V        V        V        V         V         V
 $grants = array(
-	ANONYMOUS => array(true,    FALSE,   FALSE,   true,     FALSE,   false,   false,   FALSE,   FALSE,   FALSE,    false,    false),
+	ANONYMOUS => array(true,    FALSE,   FALSE,   true,     FALSE,   true,   false,   FALSE,   FALSE,   FALSE,    false,    false),
 	UPLOADER  => array(true,    false,   false,   false,    false,   true,    false,   false,   false,   false,    true,     false),
 	VIEWER    => array(true,    false,   false,   false,    false,   false,   false,   false,   false,   false,    false,    false),
 	NORMAL    => array(true,    true,    true,    true,     true,    true,    true,    false,   false,   false,    false,    false),
@@ -222,7 +222,7 @@ $mailinfopage='mailinfo.htm';
 // Default language, the language code of one element stored in 'languages' dir
 // Anonymous cant't configure this, so will ever use this language
 //
-$dft_language = 'en';
+$dft_language = 'it';
 
 //
 // Maximum allowed filesize to upload (Kilobytes)
@@ -331,39 +331,39 @@ $font = 'Verdana';
 //
 $mimetypes = array (
 '.txt'  => array('img' => 'txt.gif',    'mime' => 'text/plain'),
-'.html' => array('img' => 'html.gif',   'mime' => 'text/html'),
-'.htm'  => array('img' => 'html.gif',   'mime' => 'text/html'),
-'.doc'  => array('img' => 'doc.gif',    'mime' => 'application/msword'),
-'.pdf'  => array('img' => 'pdf.gif',    'mime' => 'application/pdf'),
+//'.html' => array('img' => 'html.gif',   'mime' => 'text/html'),
+//'.htm'  => array('img' => 'html.gif',   'mime' => 'text/html'),
+//'.doc'  => array('img' => 'doc.gif',    'mime' => 'application/msword'),
+//'.pdf'  => array('img' => 'pdf.gif',    'mime' => 'application/pdf'),
 '.xls'  => array('img' => 'xls.gif',    'mime' => 'application/msexcel'),
-'.gif'  => array('img' => 'gif.gif',    'mime' => 'image/gif'),
-'.jpg'  => array('img' => 'jpg.gif',    'mime' => 'image/jpeg'),
-'.jpeg' => array('img' => 'jpg.gif',    'mime' => 'image/jpeg'),
-'.bmp'  => array('img' => 'bmp.gif',    'mime' => 'image/bmp'),
-'.png'  => array('img' => 'gif.gif',    'mime' => 'image/png'),
-'.zip'  => array('img' => 'zip.gif',    'mime' => 'application/zip'),
-'.rar'  => array('img' => 'rar.gif',    'mime' => 'application/x-rar-compressed'),
-'.gz'   => array('img' => 'zip.gif',    'mime' => 'application/x-compressed'),
-'.tgz'  => array('img' => 'zip.gif',    'mime' => 'application/x-compressed'),
-'.z'    => array('img' => 'zip.gif',    'mime' => 'application/x-compress'),
-'.exe'  => array('img' => 'exe.gif',    'mime' => 'application/x-msdownload'),
-'.mid'  => array('img' => 'mid.gif',    'mime' => 'audio/mid'),
-'.midi' => array('img' => 'mid.gif',    'mime' => 'audio/mid'),
-'.wav'  => array('img' => 'wav.gif',    'mime' => 'audio/x-wav'),
-'.mp3'  => array('img' => 'mp3.gif',    'mime' => 'audio/x-mpeg'),
-'.avi'  => array('img' => 'avi.gif',    'mime' => 'video/x-msvideo'),
-'.mpg'  => array('img' => 'mpg.gif',    'mime' => 'video/mpeg'),
-'.mpeg' => array('img' => 'mpg.gif',    'mime' => 'video/mpeg'),
-'.mov'  => array('img' => 'avi.gif',    'mime' => 'video/quicktime'),
-'.swf'  => array('img' => 'flash.gif',  'mime' => 'application/x-shockwave-flash'),
-'.gtar' => array('img' => 'rar.gif',    'mime' => 'application/x-gtar'),
-'.tar'  => array('img' => 'rar.gif',    'mime' => 'application/x-tar'),
-'.tiff' => array('img' => 'defaut.gif', 'mime' => 'image/tiff'),
-'.tif'  => array('img' => 'defaut.gif', 'mime' => 'image/tiff'),
-'.rtf'  => array('img' => 'doc.gif',    'mime' => 'application/rtf'),
-'.eps'  => array('img' => 'defaut.gif', 'mime' => 'application/postscript'),
-'.ps'   => array('img' => 'defaut.gif', 'mime' => 'application/postscript'),
-'.qt'   => array('img' => 'avi.gif'  ,  'mime' => 'video/quicktime'),
+//'.gif'  => array('img' => 'gif.gif',    'mime' => 'image/gif'),
+//'.jpg'  => array('img' => 'jpg.gif',    'mime' => 'image/jpeg'),
+//'.jpeg' => array('img' => 'jpg.gif',    'mime' => 'image/jpeg'),
+//'.bmp'  => array('img' => 'bmp.gif',    'mime' => 'image/bmp'),
+//'.png'  => array('img' => 'gif.gif',    'mime' => 'image/png'),
+//'.zip'  => array('img' => 'zip.gif',    'mime' => 'application/zip'),
+//'.rar'  => array('img' => 'rar.gif',    'mime' => 'application/x-rar-compressed'),
+//'.gz'   => array('img' => 'zip.gif',    'mime' => 'application/x-compressed'),
+//'.tgz'  => array('img' => 'zip.gif',    'mime' => 'application/x-compressed'),
+//'.z'    => array('img' => 'zip.gif',    'mime' => 'application/x-compress'),
+//'.exe'  => array('img' => 'exe.gif',    'mime' => 'application/x-msdownload'),
+//'.mid'  => array('img' => 'mid.gif',    'mime' => 'audio/mid'),
+//'.midi' => array('img' => 'mid.gif',    'mime' => 'audio/mid'),
+//'.wav'  => array('img' => 'wav.gif',    'mime' => 'audio/x-wav'),
+//'.mp3'  => array('img' => 'mp3.gif',    'mime' => 'audio/x-mpeg'),
+//'.avi'  => array('img' => 'avi.gif',    'mime' => 'video/x-msvideo'),
+//'.mpg'  => array('img' => 'mpg.gif',    'mime' => 'video/mpeg'),
+//'.mpeg' => array('img' => 'mpg.gif',    'mime' => 'video/mpeg'),
+//'.mov'  => array('img' => 'avi.gif',    'mime' => 'video/quicktime'),
+//'.swf'  => array('img' => 'flash.gif',  'mime' => 'application/x-shockwave-flash'),
+//'.gtar' => array('img' => 'rar.gif',    'mime' => 'application/x-gtar'),
+//'.tar'  => array('img' => 'rar.gif',    'mime' => 'application/x-tar'),
+//'.tiff' => array('img' => 'defaut.gif', 'mime' => 'image/tiff'),
+//'.tif'  => array('img' => 'defaut.gif', 'mime' => 'image/tiff'),
+//'.rtf'  => array('img' => 'doc.gif',    'mime' => 'application/rtf'),
+//'.eps'  => array('img' => 'defaut.gif', 'mime' => 'application/postscript'),
+//'.ps'   => array('img' => 'defaut.gif', 'mime' => 'application/postscript'),
+//'.qt'   => array('img' => 'avi.gif'  ,  'mime' => 'video/quicktime'),
 'directory' => array('img' => 'dossier.gif', 'mime' => ''),
 'default' =>   array('img' => 'defaut.gif',  'mime' => 'application/octet-stream')
 );

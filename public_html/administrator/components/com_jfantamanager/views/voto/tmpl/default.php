@@ -9,16 +9,16 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');
 JHtml::_('behavior.tooltip');
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_jfantamanager&view=voto&tmpl=component'); ?>" method="post" name="adminForm">
-        <label><?php echo JText::_('COM_FANTACALCIO_VOTO_INSERT_LABEL');?></label>
+        <label><?php echo JText::_('COM_JFANTAMANAGER_VOTO_INSERT_LABEL');?></label>
         <select name="filter_giornata" class="inputbox" onchange="this.form.submit()">
              <?php echo JHtml::_('select.options', $this->options, 'value', 'text', $this->state->get('filter.giornata'));?>
         </select>
-        <label><?php echo JText::_('COM_FANTACALCIO_VOTO_POLITIC_SQUADRA');?></label>
+        <label><?php echo JText::_('COM_JFANTAMANAGER_VOTO_POLITIC_SQUADRA');?></label>
         <select name="pSquadra" class="inputbox">
-            <option value=""><?php echo JText::_('COM_FANTACALCIO_VOTO_FILTER_TEAMS');?></option>
+            <option value=""><?php echo JText::_('COM_JFANTAMANAGER_VOTO_FILTER_TEAMS');?></option>
              <?php echo JHtml::_('select.options', $this->squadra, 'text', 'text',0);?>
         </select>
-        <button onclick="javascript:Joomla.submitbutton('voto.inserisci')"><?php echo JText::_('COM_FANTACALCIO_VOTO_INSERISCI');?></button>
+        <button onclick="javascript:Joomla.submitbutton('voto.inserisci')"><?php echo JText::_('COM_JFANTAMANAGER_VOTO_INSERISCI');?></button>
 	<table class="adminlist">
 		<thead><?php echo $this->loadTemplate('head');?></thead>
 		<tfoot><?php echo $this->loadTemplate('foot');?></tfoot>

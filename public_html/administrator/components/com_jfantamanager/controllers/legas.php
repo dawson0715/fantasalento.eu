@@ -64,19 +64,21 @@ class jFantaManagerControllerLegas extends JControllerAdmin
             return true;
         }
         
-        function aggiorna_giocatori()
-        {
+       function aggiorna_giocatori()
+       {
             $giornata = JRequest::getVar('giornale', '' , 'post');
             
             if ($giornata=="")
             {
                 $giornata = $this->getGiornata();
-            }          
-            $giornata=0;
+            }
+			
+			$model=$this->getModel();
+
             if($giornata==0)
-                $esito = $this->CreaGiocatori();
+                $esito = $model->CreaGiocatori();
             else
-                $esito = $this->UpdateGiocatori($giornata);
+                $esito = $model->UpdateGiocatori($giornata);
              
             if ($esito)
             {
@@ -91,6 +93,7 @@ class jFantaManagerControllerLegas extends JControllerAdmin
             return ;
         }
         
+
         function CreaGiocatori_fantagazzetta()
         {
             $db     =& JFactory::getDBO();
@@ -128,122 +131,7 @@ class jFantaManagerControllerLegas extends JControllerAdmin
             }
             return "AGGIORNATI #"+$politici;
         }
-        
-        function CreaGiocatori()
-        {//CREA LA LISTA DEI GIOCATORI CON VALORE INIZIALE = VALORE ATTUALE
 
-            $db = JFactory::getDBO();
-            $cartella_upload=JURI::root()."administrator/components/com_jfantamanager/dati/";
-            $nome_file="QGG0.txt";
-            
-            //if nox exist return false
-            $data_array = file('http://jfantamanager.altervista.org/Fantamanager/administrator/components/com_jfantamanager/dati/FGG10.txt');
-            //return count($data_array);
-            
-            if (count($data_array)<=1)
-                return false;
-            foreach($data_array as $lines)
-            {
-                $linea = explode('|',$lines);
-                if(is_numeric($linea[1]))
-                {
-//                    $result.=$data->nome.$linea[5]."<br>";
-                    $data       =   new stdClass();
-                    $data->id=$linea[1];
-                    $data->pos=$linea[2];
-                    $data->nome=$linea[3];
-                    $data->squadra=$linea[4];
-                    $data->valore_att=$linea[5];
-                    $data->valore_ini=$linea[6];
-                    $db->insertObject('#__fanta_giocatore', $data, id);
-                }
-            }
-//            return $result;
-            return true;
-        }
-        
-        function CreaGiocatoriOld()
-        {//CREA LA LISTA DEI GIOCATORI CON VALORE INIZIALE = VALORE ATTUALE
-
-            $db = JFactory::getDBO();
-            $cartella_upload="http://www.fantasalento.it/administrator/components/com_jfantamanager/dati/";
-            $nome_file="calciatori.txt";
-            
-            //if nox exist return false
-            $data_array = file($cartella_upload.$nome_file);
-            
-            if (count($data_array)<=1)
-                return false;
-            foreach($data_array as $lines)
-            {
-                $linea = explode('|',$lines);
-                if(is_numeric($linea[0]))
-                {
-                    if($linea[0]<200)
-                        $pos="P";
-                    else if($linea[0]<500)
-                        $pos="D";
-                    else if($linea[0]<800)
-                        $pos="C";
-                    else
-                        $pos="A";
-                    $data       =   new stdClass();
-                    $data->id=$linea[0];
-                    $data->pos=$pos;
-                    $data->nome=str_replace('"', '',$linea[2]);
-                    $data->squadra=str_replace('"', '',$linea[3]);
-                    $data->valore_ini=$linea[27];
-                    $data->valore_att=$linea[27];
-                    $db->insertObject('#__fanta_giocatore', $data, id);
-                }
-            }
-            return true;
-        }
-        
-        function UpdateGiocatori($giornata)
-        {//UGUALE A CREA MA NON CAMBIA IL VALORE INIZIALE
-            $db = JFactory::getDBO();
-                
-            $cartella_upload="http://www.fantasalento.it/administrator/components/com_jfantamanager/dati/";
-            $nome_file="QGG$giornata.txt";
-            
-            //if nox exist return false
-            $data_array = file($cartella_upload.$nome_file);
-                        
-            if (count($data_array)<=1)
-                return false;
-                
-            $db->setQuery(" UPDATE `#__fanta_giocatore` 
-                            SET `squadra` = '',
-                                `valore_att` = '99'");
-            $db->query();
-            foreach($data_array as $lines)
-            {
-                $linea = explode('|',$lines);
-                if(is_numeric($linea[0]))
-                {
-                    $db->setQuery("UPDATE `#__fanta_giocatore` 
-                                    SET `squadra` = '". str_replace('"', '',$linea[3]) ."',
-                                        `valore_att` = '$linea[4]' 
-                                    WHERE `#__fanta_giocatore`.`id` = $linea[0] LIMIT 1 ;");
-                    $conta++;
-                    $db->query();
-                    if($db->getAffectedRows()==0)
-                    {
-                        $data       =   new stdClass();
-                        $data->id=$linea[0];
-                        $data->pos=$linea[1];
-                        $data->nome=$linea[2];
-                        $data->squadra=$linea[3];
-                        $data->valore_att=$linea[4];
-                        $data->valore_ini=$linea[5];
-                        $db->insertObject('#__fanta_giocatore', $data, id);
-                    }
-                }
-            }
-            return $conta;
-        }
-        
         function recupera($lega_id = 0)
         {
             $model=$this->getModel();
@@ -308,46 +196,85 @@ class jFantaManagerControllerLegas extends JControllerAdmin
         function CalcolaLega($lega,$giornata)
         {
             $model=$this->getModel();
-            $squadre=$model->getSquadreLega($lega->id);
-            if(0)//$lega->p_fissa==1)
-                foreach ($squadre as $squadra)
-                {
-                    $calcolo    = $model->CalcolaFissa($squadra->id,$giornata,$lega->sostituzioni,$lega->modificatore);
-//                    if ($calcolo->punti==0)
-//                    {
-//                        //INSERISCO IN fantavoti_squadra  COPIA IN IMPIEGA
-                        $model->Recupera($squadra->id,$giornata);
-//                        $calcolo    = $model->CalcolaFissa($squadra->id,$giornata,$lega->sostituzioni,$lega->modificatore);
-//                    }
-                    $salva[$squadra->id]->punti    = $calcolo->punti;
-                    $salva[$squadra->id]->passato    = $squadra->tot_punti;
-                    if ($calcolo->punti>0)
-                        $txt .= "$squadra->nome:$calcolo->punti(F)<br>";
-                    else
-                        $txt .= "$squadra->nome: ERRORE <br>";
-                }
-            else
-                foreach ($squadre as $squadra)
-                {
-                    $calcolo    = $model->CalcolaMobile($squadra->id,$giornata,$lega->sostituzioni,$lega->modificatore);//($squadra->id,2,$lega->sostituzioni,$lega->modificatore);
-//                    if ($calcolo->punti==0)
-//                    {
-//                        $calcolo    = $model->CalcolaMobile($squadra->id,$giornata,$lega->sostituzioni,$lega->modificatore);
-//                    }
-                    $salva->punti[$squadra->id]    = $calcolo->punti;
-                    $salva->giornata=$giornata;
-                    if ($calcolo->punti>0)
-                        $txt .= "$squadra->nome:$calcolo->punti(M) $recupero<br>";
-                    else
-                        $txt .= "$squadra->nome: ERRORE $recupero<br>";
-                }
-            $ok = $model->setSquadra($salva,$squadra->lega);
-            return count($squadre)." squadre della lega:$lega->nome sono: $ok <br>$txt<br>";
-        }
-        
+		/*
+		print_r($lega);exit;
+		[id] => 1 [nome] => Lecce [logo] => [scontri_diretti] => 0 
+		[partecipanti] => 4 [giornate] => 38 [ritardo] => 0 [crediti] => 250 
+		[modificatore] => 1 [p_fissa] => 1 [sostituzioni] => 3 [ruolo] => 0 [cambi] => 15 
+		[goal_at] => 0.0 [goal_range] => 0.0 )
+		*/
+           //CALCOLA I PUNTI DI OGNI SQUADRA
+			$squadre=$model->getSquadreLega($lega->id);
+			foreach ($squadre as $squadra)
+			{
+				$calcolo    = $model->Calcola($squadra->id,$giornata,$lega);
 
-        
-        public function changeBlock()
+				$salva[$squadra->id]->punti		= $calcolo->punti;
+				$salva[$squadra->id]->goal    	= $calcolo->goal;
+				$salva[$squadra->id]->passato  	= $squadra->tot_punti;				
+				
+				if ($calcolo->punti>0)
+					$txt .= "$squadra->nome:$calcolo->punti(F)<br>";
+				else
+					$txt .= "$squadra->nome: ERRORE <br>";
+			}
+			
+			//Ho calcolato tutti i punti delle squadre
+			//ASSEGNO I PUNTI ALLA SQUADRA			
+			$scontri = $model->getScontri($giornata);
+			foreach ($scontri as $scontro)
+			{
+				if($salva[$scontro->casa]->goal > $salva[$scontro->trasferta]->goal)
+				{
+					$salva[$scontro->casa]->puntidiretti = 3;
+					$salva[$scontro->casa]->v = 1;
+					$salva[$scontro->trasferta]->puntidiretti = 0;	
+					$salva[$scontro->trasferta]->p = 1;
+				}
+				else if($salva[$scontro->casa]->goal < $salva[$scontro->trasferta]->goal)
+				{
+					$salva[$scontro->casa]->puntidiretti = 0;
+					$salva[$scontro->casa]->p = 1;
+					$salva[$scontro->trasferta]->puntidiretti = 3;
+					$salva[$scontro->trasferta]->v = 1;
+				}
+				else
+				{
+					$salva[$scontro->casa]->puntidiretti = 1;
+					$salva[$scontro->casa]->n = 1;
+					$salva[$scontro->trasferta]->puntidiretti = 1;
+					$salva[$scontro->trasferta]->n = 1;
+				}
+				$salva[$scontro->casa]->goalsubiti = $salva[$scontro->trasferta]->goal;
+				$salva[$scontro->trasferta]->goalsubiti = $salva[$scontro->casa]->goal;
+			}	
+			
+            $somma = $model->setSquadra($salva,$squadra->lega,$giornata);
+			
+			/*/______________ DEBUG ___________
+			echo "GIORNATA" . $giornata;
+			echo "SCONTRI:";print_r($scontri);
+			exit;
+			//___________ FINE DEBUG ___________/*/
+			
+			//CALCOLO LA PROSSIMA GIORNATA SE SONO FINITI I GIRONI
+			if($scontri->stato == 0)
+			{	$last	= $model->getLast($lega);
+				if($giornata == $last)  //Ultima dei gironi
+				$model->setFirst($lega);						//SET STATO A 1
+			}
+			else if($scontri->stato == 2) //Qualsiasi ritorni 
+				$model->setOnes($scontri,$lega);		//SET STATO A 1
+			else if ($scontri->stato == 1) //Qualsiasi andata
+				$model->setBack($scontri,$lega); 				//SET STATO A 2
+			
+			$model->ufficializza($giornata,1);
+			
+            return 	count($squadre)." squadre della lega :$lega->nome ($diretto) per scontri diretti sono: <br>$txt<br>" .
+					count($squadre)." squadre della lega :$lega->nome ($somma) per somma diretta sono: <br>$txt<br>";
+        }
+
+    public function changeBlock()
 	{
 		// Check for request forgeries.
 		JRequest::checkToken() or jexit(JText::_('JINVALID_TOKEN'));
@@ -362,7 +289,7 @@ class jFantaManagerControllerLegas extends JControllerAdmin
 //                $this->setRedirect( 'index.php?option=com_jfantamanager&view=calendarios', $msg );
 //                return;
 		if (empty($ids)) {
-			JError::raiseWarning(500, JText::_('COM_FANTACALCIO_CALENDARIOS_NO_ITEM_SELECTED'));
+			JError::raiseWarning(500, JText::_('COM_JFANTAMANAGER_CALENDARIOS_NO_ITEM_SELECTED'));
 		} else {
                     // Get the model.
                     $model = $this->getModel();
@@ -371,9 +298,9 @@ class jFantaManagerControllerLegas extends JControllerAdmin
 				JError::raiseWarning(500, $model->getError());
                     } else
                         if ($value == 1){
-                                $this->setMessage(JText::plural('COM_FANTACALCIO_CALENDARIOS_N_GIOCATA', $ids[0]));
+                                $this->setMessage(JText::plural('COM_JFANTAMANAGER_CALENDARIOS_N_GIOCATA', $ids[0]));
                         } else if ($value == 0){
-                                $this->setMessage(JText::plural('COM_FANTACALCIO_CALENDARIOS_N_UNGIOCATA', $ids[0]));
+                                $this->setMessage(JText::plural('COM_JFANTAMANAGER_CALENDARIOS_N_UNGIOCATA', $ids[0]));
                         }
 
 		}
@@ -397,4 +324,3 @@ class jFantaManagerControllerLegas extends JControllerAdmin
 //            return;
 //        }
 }
-

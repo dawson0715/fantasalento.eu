@@ -67,16 +67,12 @@
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/catania/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
                     <img height="32" border="0" width="32" alt="Catania" src="/images/com_jfantamanager/squadre/catania.gif"></a></td>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/cesena/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Cesena" src="/images/com_jfantamanager/squadre/cesena.gif"></a></td>
+            <td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/chievo/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="Chievo" src="/images/com_jfantamanager/squadre/chievo.gif"></a></td>            <td>
             <td valign="top" style="border: 0pt solid rgb(255, 255, 255);" rowspan="6">
                 <iframe scrolling="no" height="195" frameborder="0" align="right" width="483" border="0" src="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/atalanta/formazione/formazione.xml&allowScriptAccess=value=always" style="border: 0pt solid rgb(255, 255, 255);" src="/images/com_jfantamanager/squadre/probform2.swf" marginheight="1" marginwidth="1" name="I1">Il browser in uso non supporta frame non ancorati oppure è configurato in modo che i frame non ancorati non siano visualizzati.</iframe>
             </td>
         </tr><tr>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/chievo/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Chievo" src="/images/com_jfantamanager/squadre/chievo.gif"></a></td>
+            
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/fiorentina/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
                     <img height="32" border="0" width="32" alt="Fiorentina" src="/images/com_jfantamanager/squadre/fiorentina.gif"></a></td>
@@ -88,38 +84,26 @@
                     <img height="32" border="0" width="32" alt="Inter" src="/images/com_jfantamanager/squadre/inter.gif"></a></td>
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/juventus/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Juventus" src="/images/com_jfantamanager/squadre/juventus.gif"></a></td>
+                    <img height="32" border="0" width="32" alt="Juventus" src="/images/com_jfantamanager/squadre/juventus.gif"></a></td>					<td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/lazio/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="Lazio" src="/images/com_jfantamanager/squadre/lazio.gif"></a></td>
         </tr><tr></tr><tr>
+            
             <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/lazio/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Lazio" src="/images/com_jfantamanager/squadre/lazio.gif"></a></td>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/lecce/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Lecce" src="/images/com_jfantamanager/squadre/lecce.gif"></a></td>
+                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/livorno/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
+                    <img height="32" border="0" width="32" alt="Livorno" src="/images/com_jfantamanager/squadre/livorno.gif"></a></td>
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/milan/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
                     <img height="32" border="0" width="32" alt="Milan" src="/images/com_jfantamanager/squadre/milan.gif"></a></td>
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/napoli/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Napoli" src="/images/com_jfantamanager/squadre/napoli.gif"></a></td>
+                    <img height="32" border="0" width="32" alt="Napoli" src="/images/com_jfantamanager/squadre/napoli.gif"></a></td>			<td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/parma/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="Parma" src="/images/com_jfantamanager/squadre/parma.gif"></a></td>            <td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/roma/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="Roma" src="/images/com_jfantamanager/squadre/roma.gif"></a></td>
+            
+        </tr><tr>
             <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/novara/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Novara" src="/images/com_jfantamanager/squadre/novara.png"></a></td>
-        </tr><tr><td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/palermo/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Palermo" src="/images/com_jfantamanager/squadre/palermo.gif"></a></td>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/parma/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Parma" src="/images/com_jfantamanager/squadre/parma.gif"></a></td>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/roma/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Roma" src="/images/com_jfantamanager/squadre/roma.gif"></a></td>
-            <td>
-                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/siena/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="siena" src="/images/com_jfantamanager/squadre/siena.gif"></a></td>
+                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/sampdoria/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
+                    <img height="32" border="0" width="32" alt="sampdoria" src="/images/com_jfantamanager/squadre/sampdoria.gif"></a></td>								<td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/sassuolo/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="sassuolo" src="/images/com_jfantamanager/squadre/sassuolo.png"></a></td>			<td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/torino/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="torino" src="/images/com_jfantamanager/squadre/torino.gif"></a></td>
             <td>
                 <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/udinese/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">
-                    <img height="32" border="0" width="32" alt="Udinese" src="/images/com_jfantamanager/squadre/udinese.gif"></a></td>
+                    <img height="32" border="0" width="32" alt="Udinese" src="/images/com_jfantamanager/squadre/udinese.gif"></a></td>								<td>                <a href="http://www.gazzetta.it/ssi/swf/campetto_oriz.swf?xmlPath=http://www.gazzetta.it/ssi/2011/boxes/calcio/squadre/verona/formazione/formazione.xml&amp;allowScriptAccess=value=always" target="I1">                    <img height="32" border="0" width="32" alt="verona" src="/images/com_jfantamanager/squadre/verona.png"></a></td>
         </tr>
         <tr><td colspan="5">
                 <font size="1" face="Arial" color="#333333">&nbsp;Clicca sul logo per vedere la probabile formazione.</font>

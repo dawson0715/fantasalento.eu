@@ -4,25 +4,25 @@ defined('_JEXEC') or die('Restricted Access');
 ?>
 <tr>
 	<th width="5">
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_ID'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_ID'); ?>
 	</th>
 	<th width="20">
 		<input type="checkbox" name="toggle" value="" onclick="checkAll(<?php echo count($this->items); ?>);" />
 	</th>
         <th>
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_LOGO'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_LOGO'); ?>
 	</th>
 	<th>
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_NOME'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_NOME'); ?>
 	</th>
         <th width="5">
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_PERMESSO'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_PERMESSO'); ?>
 	</th>
         <th>
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_CAMBI'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_CAMBI'); ?>
 	</th>
         <th>
-		<?php echo JText::_('COM_FANTACALCIO_SQUADRAS_HEADING_BILANCIO'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_SQUADRAS_HEADING_BILANCIO'); ?>
 	</th>
 
 </tr>

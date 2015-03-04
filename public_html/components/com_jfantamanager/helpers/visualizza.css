@@ -58,7 +58,7 @@ table#claz td{
 .elenco .D,.sotto .D,.elenco .A,.sotto .A{color:#555555}
 /*.elenco .A,.sotto .A{color:#083194}*/
 
-.consegnate{margin: 5px 0px;color: black; width: 100%}
+.consegnate{margin: 5px 0px;color: black;float:left;width: 320px;margin-right: 10px;}
 .consegnate p{border: 1px solid lightgray;
                 background: url("../images/title.png") lightgray;
                 border-top-left-radius: 7px;
@@ -72,18 +72,18 @@ table#claz td{
 
 .sotto {width: 100%}
 .sotto tr{background-color: lightgray;color: black}
-.sotto th{font-size: 10px; text-decoration: underline;vertical-align: middle; background-color: #808080;border: 1px solid white;padding: 1px 0px}
-.sotto td{padding: 0px 2px;border: 1px solid white;text-align: center;vertical-align: middle}
+.sotto th{font-size: 10px; text-decoration: underline;vertical-align: middle; background-color: #808080;border: 1px solid white;padding: 1px 0px;text-align: center;}
+.sotto td{padding: 0px 2px;/*border: 1px solid white;*/text-align: center;vertical-align: middle;height:26px;font-size:14px;}
 .sotto .bianco{ background-color: white; } 
-.sotto .linea {border-bottom: solid #808080 2px}
-.sotto #giocatore_{color: darkblue;text-align: left;padding: 2px 5px}
+.sotto .linea {border-bottom: solid #808080 2px !important}
+.sotto #giocatore_{color: darkblue;text-align: left;padding: 2px 0px 2px 8px}
 .sotto #giocatore_in{color: darkblue; font-weight: bold;;text-align: left;padding: 2px 5px}
 .sotto #giocatore_out,.sotto #left{color: darkgray; text-decoration: line-through;text-align: left;padding: 2px 5px}
 .sotto img{height: 18px;}
 /*.sotto .D,.sotto .A{background-color: #EFEFEF}*/
 .bordo{border: 1px solid lightgray; padding: 7px;}
-.result {border: 1px solid lightgray;font-size: 25px;font-weight: bold;height: 30px;margin: 8px 0 5px 200px;padding: 5px;text-align: right; width: 90px;background: url("../images/cerchio.png") no-repeat scroll 0 0 transparent}
-#goal{color: red;float: left; margin: -1px 8px;}
+.result {border: 1px solid lightgray;font-size: 25px;font-weight: bold;height: 16px;margin: 8px 0 5px 200px;padding: 12px;text-align: right; width: 80px;background: url("../images/cerchio.png") no-repeat scroll 0 0 transparent}
+#goal{color: red;float: left; margin: 0px;}
 .msg{
     background-color: #C3D2E5;
     color:#0055BB;

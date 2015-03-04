@@ -9,9 +9,9 @@ JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');
 JHtml::_('behavior.tooltip');
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_jfantamanager&view=squadras'); ?>" method="post" name="adminForm">
-        <label><?php echo JText::_('COM_FANTACALCIO_LEGA_FILTER_LABEL');?></label>
+        <label><?php echo JText::_('COM_JFANTAMANAGER_LEGA_FILTER_LABEL');?></label>
         <select name="filter_lega" class="inputbox" onchange="this.form.submit()">
-             <option value=""><?php echo JText::_('COM_FANTACALCIO_LEGA_FILTER_PAGE');?></option>
+             <option value=""><?php echo JText::_('COM_JFANTAMANAGER_LEGA_FILTER_PAGE');?></option>
              <?php echo JHtml::_('select.options', $this->options, 'value', 'text', $this->state->get('filter.lega'));?>
         </select>
 	<table class="adminlist">

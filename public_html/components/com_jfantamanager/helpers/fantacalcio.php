@@ -51,8 +51,19 @@ class jFantaManagerHelper
             
             return $giornata;
 	}
-        
-        public static function getIdSquadra()
+    
+	function getGiornataN($giornata)
+	{
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		$query->select('MIN(giornata) ');
+		$query->from('#__fanta_scontri');
+		$query->where("giornata >= $giornata ");
+		$db->setQuery( $query );
+		return $db->loadResult();
+	}
+	
+    public static function getIdSquadra()
 	{
             $db     =& JFactory::getDBO();
             $user   = &JFactory::getUser();
@@ -182,5 +193,4 @@ class jFantaManagerHelper
             //LEFT JOIN #__fanta_impiega LEFT JOIN #__fanta_giocatore
             return $result;
         }
-        
 }

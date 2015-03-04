@@ -108,10 +108,16 @@ class jFantaManagerModelConsegna extends JModel
         
         function salva()
         {
-            
                 $db         =& JFactory::getDBO();
                 $squadra_id = jFantaManagerHelper::getIdSquadra();
                 $numgiornata= jFantaManagerHelper::getGiornata();
+				
+				$db->setQuery("INSERT INTO jos_fanta_voti_squadra_backup (`giornata`,`squadra_id`, `punti`,`posizione`,`data`,`ora`,`modulo`,`puntidiretti`,`goal`,`goalsubiti`,`posizionediretti`,`v`,`p`,`n`,`device`)
+				SELECT `giornata`,`squadra_id`,`punti`,`posizione`,`data`,`ora`,`modulo`,`puntidiretti`,`goal`, `goalsubiti`,`posizionediretti`,`v`,`p`,`n`,`device` FROM jos_fanta_voti_squadra
+					WHERE squadra_id = $squadra_id 
+					AND giornata = $numgiornata");
+                $db->query();
+				
                 //AGGIORNO LA DATA DI CONSEGNA E IL MODULO
                 $db->setQuery("DELETE FROM #__fanta_voti_squadra
                                 WHERE squadra_id = $squadra_id 
@@ -133,6 +139,12 @@ class jFantaManagerModelConsegna extends JModel
                     $this->msg="Errore formazione";
                     return;
                 }
+				
+				$db->setQuery("INSERT INTO #__fanta_impiega_backup (squadra_id, giocatore_id, giornata, riserva)
+								SELECT squadra_id, giocatore_id, giornata, riserva FROM `#__fanta_impiega` 
+                	                WHERE squadra_id = $squadra_id 
+                    	            AND giornata = $numgiornata");
+                $db->query();
                 $db->setQuery("DELETE FROM `#__fanta_impiega` 
                                 WHERE squadra_id = $squadra_id 
                                 AND giornata = $numgiornata");
@@ -176,4 +188,63 @@ class jFantaManagerModelConsegna extends JModel
                sleep(1);
                return true;
         }
+		
+		function aSalva($squadra_id, $modulo, $formazione, $numgiornata){
+			
+//			sc_formazione:3
+//			txt_formazione:241,458,409,11,495,161,470,820,314,398,209,296,191,280,292,286,453,50
+//			id:1
+
+			$db = JFactory::getDBO();
+			
+			$db->setQuery("INSERT INTO jos_fanta_voti_squadra_backup (`giornata`,`squadra_id`, `punti`,`posizione`,`data`,`ora`,`modulo`,`puntidiretti`,`goal`,`goalsubiti`,`posizionediretti`,`v`,`p`,`n`,`device`)
+			SELECT `giornata`,`squadra_id`,`punti`,`posizione`,`data`,`ora`,`modulo`,`puntidiretti`,`goal`, `goalsubiti`,`posizionediretti`,`v`,`p`,`n`,`device` FROM jos_fanta_voti_squadra
+				WHERE squadra_id = $squadra_id 
+				AND giornata = $numgiornata");
+			$db->query();
+
+			//AGGIORNO LA DATA DI CONSEGNA E IL MODULO
+			$db->setQuery("DELETE FROM #__fanta_voti_squadra
+							WHERE squadra_id = $squadra_id 
+							AND giornata = $numgiornata
+							LIMIT 1");
+
+			$db->query();
+			$data       =   new stdClass();
+			$data->squadra_id = $squadra_id;
+			$data->giornata = $numgiornata;
+			$data->data=date('Y-m-d');
+			$data->ora=date('G:i');
+			$data->modulo = $modulo;
+			$db->insertObject('#__fanta_voti_squadra', $data, id);
+
+			////SALVA
+			if (count($formazione)!=18)
+			{
+				$this->msg="Errore formazione";
+				return;
+			}
+			
+			$db->setQuery("INSERT INTO #__fanta_impiega_backup (squadra_id, giocatore_id, giornata, riserva, device)
+							SELECT squadra_id, giocatore_id, giornata, riserva, device FROM `#__fanta_impiega` 
+								WHERE squadra_id = $squadra_id 
+								AND giornata = $numgiornata");
+			$db->query();
+			$db->setQuery("DELETE FROM `#__fanta_impiega` 
+							WHERE squadra_id = $squadra_id 
+							AND giornata = $numgiornata");
+			$db->query();
+			$data       =   new stdClass();
+			for($i=0;$i<18;$i++)
+			{
+				$data->squadra_id = $squadra_id;
+				$data->giornata = $numgiornata;
+				$data->giocatore_id = $formazione[$i];
+				$data->device = 1;
+				$data->riserva = ($i<11)?"0":$i-10;
+				$db->insertObject('#__fanta_impiega', $data, id);
+		   }
+		   sleep(1);
+		   return true;
+		}
 }

@@ -12,10 +12,10 @@ class JConfig {
 	public $debug = '0';
 	public $debug_lang = '0';
 	public $dbtype = 'mysql';
-	public $host = 'sql.dev-dawson.it';
-	public $user = 'devdawso70753';
-	public $password = 'devd07325';
-	public $db = 'devdawso70753';
+	public $host = 'localhost';
+	public $user = 'root';
+	public $password = 'database';
+	public $db = 'dws_fantasalento';
 	public $dbprefix = 'dwf_';
 	public $live_site = '';
 	public $secret = 'wDPXygOpPtfFe3rk';

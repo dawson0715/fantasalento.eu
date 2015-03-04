@@ -42,7 +42,7 @@ class jFantaManagerViewCalendarios extends JView
 	 */
 	protected function addToolBar() 
 	{
-		JToolBarHelper::title(JText::_('COM_FANTACALCIO_MANAGER_CALENDARIOS'));
+		JToolBarHelper::title(JText::_('COM_JFANTAMANAGER_MANAGER_CALENDARIOS'));
 		JToolBarHelper::deleteList('', 'calendarios.delete');
 		JToolBarHelper::editList('calendario.edit');
 		JToolBarHelper::addNew('calendario.add');

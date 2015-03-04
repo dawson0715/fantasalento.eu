@@ -35,6 +35,7 @@ class jFantaManagerViewAll extends JView
                 foreach ($squadre as $i=> $squadra)
                 {
                     $lista[$i] = jFantaManagerModelAll::getGiocatoriMobile($squadra->id,$giornata,3,1);
+                    //$lista[$i] = jFantaManagerModelLega::CalcolaMobile($squadra->id,$giornata,3,1);
                     if($lista[$i]=="")
                         $lista[$i]="FORMAZIONE NON CONSEGNATA";
                 }
@@ -44,13 +45,16 @@ class jFantaManagerViewAll extends JView
 			JError::raiseError(500, implode('<br />', $errors));
 			return false;
 		}
-                $this->squadre  =$squadre;
-                $this->giocatori=$lista;
-                $this->root=JURI::root();
+		$this->squadre  =$squadre;
+		$this->giocatori=$lista;
+		$this->root=JURI::root();
 		// Display the view
-                
-                $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'visualizza.css');
+		
+		$document = &JFactory::getDocument();
+		if (JRequest::getVar('tmpl', '') == 'component')
+			$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'visualizza_mobile.css');
+		else
+			$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'visualizza.css');
 		parent::display($tpl);
 	}
 }

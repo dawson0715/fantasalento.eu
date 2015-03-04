@@ -6,7 +6,7 @@ JHtml::_('behavior.tooltip');
 <form action="<?php echo JRoute::_('index.php?option=com_jfantamanager&layout=edit&giornata='.(int) $this->item->giornata); ?>" method="post" name="adminForm" id="helloworld-form">
     <div class="width-60 fltlft">
         <fieldset class="adminform">
-            <legend><?php echo JText::_( 'COM_FANTACALCIO_CALENDARIO_DETAILS' ); ?></legend>
+            <legend><?php echo JText::_( 'COM_JFANTAMANAGER_CALENDARIO_DETAILS' ); ?></legend>
             <ul class="adminformlist">
                 <?php foreach($this->form->getFieldset() as $field): ?>
                 <li><?php echo $field->label;echo $field->input;?></li>

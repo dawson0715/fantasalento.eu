@@ -13,11 +13,11 @@ class jFantaManagerViewFreeGiocatori extends JView
 	// Overwriting JView display method
 	function display($tpl = null)
 	{
-                $this->portieri = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('P');
-                $this->difensori = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('C');
-                $this->centrocampisti = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('D');
-                $this->attaccanti = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('A');
-                $this->options = $this->get('Options');
+                $this->portieri         = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('P');
+                $this->difensori        = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('C');
+                $this->centrocampisti   = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('D');
+                $this->attaccanti       = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('A');
+                $this->options          = $this->get('Options');
                 //$lista = $this->get("Giocatoris");
                  
 		// Check for errors.
@@ -31,8 +31,8 @@ class jFantaManagerViewFreeGiocatori extends JView
                 
                 $this->root=JURI::root();
                 $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'profile.css');
-                $document->addScriptDeclaration('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'freegiocatori.js');
+                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'freegiocatori.css');
+                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'freegiocatori.js');
 		// Display the view
 		parent::display($tpl);
 	}

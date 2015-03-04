@@ -1,5 +1,19 @@
-body.contentpane {background-color: white;color: black; font-size: 22pt;}
-h2.item-page-title {font-size: 22pt;}
+h2.item-page-title{
+	text-align: center;
+	color: black;
+	margin: 20px!important;
+	margin-bottom: 0px !important;
+}
+hr{display: none;}
+
+form{
+	width: 100%;
+	text-align: center;
+	display: block !important;
+}
+
+form .inputbox, form label{width: 60%;color:black;}
+
 .visualizza{ color:#000000; border-left:1px solid lightgrey/*69adf2*/; background-color:white; width: 100%;}
 .visualizza thead,#claz thead {background:url(../images/title.png);background-color: lightgrey; text-align: center; height: 20px;padding:5px;font-weight: bold;}
 .visualizza tr{ height:115px;}
@@ -8,6 +22,7 @@ h2.item-page-title {font-size: 22pt;}
 .visualizza a{text-decoration:none; color:#000000}
 .squadra_logo{max-width: 100px; max-height: 100px}
 .squadra_nome{ line-height: 20px;}
+
 
 table#claz {
     margin-left:5px;
@@ -59,7 +74,11 @@ table#claz td{
 .elenco .D,.sotto .D,.elenco .A,.sotto .A{color:#555555}
 /*.elenco .A,.sotto .A{color:#083194}*/
 
-.consegnate{margin: 5px 0px;color: black;padding:10px }
+.consegnate{
+	margin: 15px auto;
+	color: black;
+	width: 320px;
+}
 .consegnate p{border: 1px solid lightgray;
                 background: url("../images/title.png") lightgray;
                 border-top-left-radius: 7px;
@@ -68,21 +87,23 @@ table#claz td{
                 padding: 5px 0;
                 text-align: center;
 }
-.consegnate td{padding: 7px;}
+.consegnate td{padding: 7px; border: none !important}
+.consegnate tr {border: none !important}
 
+.sotto {width: 100%}
 .sotto tr{background-color: lightgray;color: black}
-.sotto th{text-decoration: underline;vertical-align: middle; background-color: #808080;border: 1px solid white;padding: 1px 0px}
-.sotto td{padding: 0px;border: 1px solid white;text-align: center;vertical-align: middle}
+.sotto th{font-size: 10px; text-decoration: underline;vertical-align: middle; background-color: #808080;border: 1px solid white;padding: 1px 0px;text-align: center;}
+.sotto td{padding: 0px 2px;/*border: 1px solid white;*/text-align: center;vertical-align: middle;height:26px;font-size:14px;}
 .sotto .bianco{ background-color: white; } 
-.sotto #giocatore_{color: darkblue;text-align: left;padding: 2px 5px}
+.sotto .linea {border-bottom: solid #808080 2px !important}
+.sotto #giocatore_{color: darkblue;text-align: left;padding: 2px 0px 2px 8px}
 .sotto #giocatore_in{color: darkblue; font-weight: bold;;text-align: left;padding: 2px 5px}
 .sotto #giocatore_out,.sotto #left{color: darkgray; text-decoration: line-through;text-align: left;padding: 2px 5px}
-.sotto img{height: 26pt;}
-.sotto {margin-bottom: 10px}
+.sotto img{height: 18px;}
 /*.sotto .D,.sotto .A{background-color: #EFEFEF}*/
-.bordo{border: 1px solid lightgray; padding: 7px;}
-.result {border: 1px solid lightgray;font-size: 25px;font-weight: bold;height: 30px;margin: 8px 0 5px 200px;padding: 5px;text-align: right; width: 90px;background: url("../images/cerchio.png") no-repeat scroll 0 0 transparent}
-#goal{color: red;float: left; margin: -1px 8px;}
+.bordo{border: 1px solid lightgray; padding: 7px;background-color: #FFF}
+.result {border: 1px solid lightgray;font-size: 25px;font-weight: bold;height: 16px;margin: 8px 0 5px 200px;padding: 12px;text-align: right; width: 80px;background: url("../images/cerchio.png") no-repeat scroll 0 0 transparent}
+#goal{color: red;float: left; margin: 0px;}
 .msg{
     background-color: #C3D2E5;
     color:#0055BB;
@@ -103,3 +124,5 @@ table#claz td{
     font-weight: bold;
     text-decoration: underline;
 }
+
+body{background-image:none !important;}

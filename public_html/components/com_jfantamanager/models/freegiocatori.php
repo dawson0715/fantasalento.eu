@@ -14,9 +14,17 @@ class jFantaManagerModelFreegiocatori extends JModelList
         {
             $user = &JFactory::getUser();
             $db =& JFactory::getDBO();
-            $data = date('Y-m-d');
+            //$data = date('Y-m-d');
 
-            $query ="SELECT G.id,G.nome,G.pos,G.squadra FROM #__fanta_giocatore as G LEFT JOIN #__fanta_possiede as P ON(P.giocatore_id = G.id)  WHERE P.giocatore_id IS NULL AND pos = '$pos' ORDER BY pos DESC,nome ASC";
+            $query ="SELECT FG.id, FG.nome, FG.pos, FG.squadra, COUNT( * ) AS P, SUM( voto ) AS V, SUM( totale ) AS T, SUM( ammonizione ) AS A, SUM( espulsione ) AS E, SUM( assist ) AS Ass, SUM( goal ) + SUM( rigore_segnato ) AS G, SUM( goal_subito ) AS Gs, SUM( rigore_parato ) AS Rp, SUM( rigore_sbagliato ) AS Rs
+                        FROM jos_fanta_giocatore AS FG
+                        LEFT JOIN jos_fanta_possiede AS FP ON ( FP.giocatore_id = FG.id ) 
+                        LEFT JOIN jos_fanta_voti AS FV ON ( FG.id = FV.giocatore_id ) 
+                        WHERE FP.giocatore_id IS NULL 
+                        AND pos =  '$pos'
+                        GROUP BY FG.id
+                        ORDER BY nome ASC ";
+            
             $db->setQuery( $query );
             $datisquadra = $db->loadObjectList();
             return $datisquadra;

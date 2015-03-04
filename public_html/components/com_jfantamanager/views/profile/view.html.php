@@ -39,7 +39,11 @@ class jFantaManagerViewProfile extends JView
 		// Display the view
                 
                 $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'profile.css');
+		if (JRequest::getVar('tmpl', '') == 'component')
+			$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'profile_mobile.css');
+		else
+			$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'profile.css');
+
 		parent::display($tpl);
 	}
 }

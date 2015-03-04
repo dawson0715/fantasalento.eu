@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="COM_FANTACALCIO_VIEW_LIST_TITLE">
-		<message>COM_FANTACALCIO_VIEW_LIST_DESC</message>
+	<layout title="COM_JFANTAMANAGER_VIEW_LIST_TITLE">
+		<message>COM_JFANTAMANAGER_VIEW_LIST_DESC</message>
 	</layout>
 </metadata>

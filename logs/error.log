@@ -45,3 +45,37 @@
 [Wed Mar 04 20:04:41.877623 2015] [authz_core:error] [pid 7432:tid 1684] [client 127.0.0.1:17518] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
 [Wed Mar 04 20:04:46.961914 2015] [authz_core:error] [pid 7432:tid 1684] [client 127.0.0.1:17518] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
 [Wed Mar 04 20:04:46.975915 2015] [authz_core:error] [pid 7432:tid 1684] [client 127.0.0.1:17518] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 21:47:21.684595 2015] [authz_core:error] [pid 8416:tid 1660] [client 127.0.0.1:26712] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 21:47:21.707596 2015] [authz_core:error] [pid 8416:tid 1660] [client 127.0.0.1:26712] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 21:56:50.181518 2015] [authz_core:error] [pid 8416:tid 1632] [client 127.0.0.1:26855] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 21:56:50.209519 2015] [authz_core:error] [pid 8416:tid 1632] [client 127.0.0.1:26855] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:15:24.253875 2015] [authz_core:error] [pid 5748:tid 1764] [client 127.0.0.1:1819] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 22:15:24.326879 2015] [authz_core:error] [pid 5748:tid 1764] [client 127.0.0.1:1819] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:19:58.358787 2015] [authz_core:error] [pid 3592:tid 1708] [client 127.0.0.1:3824] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 22:19:58.401988 2015] [authz_core:error] [pid 3592:tid 1708] [client 127.0.0.1:3824] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:19:59.866192 2015] [authz_core:error] [pid 3592:tid 1708] [client 127.0.0.1:3824] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 22:19:59.881792 2015] [authz_core:error] [pid 3592:tid 1708] [client 127.0.0.1:3824] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:22:25.425028 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 22:22:25.440628 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:22:30.281658 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.html
+[Wed Mar 04 22:22:30.311259 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:22:33.909068 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.php
+[Wed Mar 04 22:22:33.944268 2015] [authz_core:error] [pid 5596:tid 1772] [client 127.0.0.1:4845] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:24:38.006049 2015] [authz_core:error] [pid 992:tid 1700] [client 127.0.0.1:5705] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.php
+[Wed Mar 04 22:24:38.044250 2015] [authz_core:error] [pid 992:tid 1700] [client 127.0.0.1:5705] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:29:04.135439 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.php
+[Wed Mar 04 22:29:04.173040 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:29:05.494047 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.php
+[Wed Mar 04 22:29:05.525247 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:29:06.167650 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/index.php
+[Wed Mar 04 22:29:06.198850 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:29:08.821680 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/, referer: http://local.fantasalento/index.php
+[Wed Mar 04 22:29:08.858881 2015] [authz_core:error] [pid 4728:tid 1704] [client 127.0.0.1:7585] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:30:25.498945 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/, referer: http://local.fantasalento/index.php
+[Wed Mar 04 22:30:25.514545 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:30:29.157351 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/, referer: http://local.fantasalento/index.php
+[Wed Mar 04 22:30:29.188551 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:30:30.438774 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/, referer: http://local.fantasalento/index.php
+[Wed Mar 04 22:30:30.469974 2015] [authz_core:error] [pid 4256:tid 1704] [client 127.0.0.1:8116] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico
+[Wed Mar 04 22:30:43.370525 2015] [authz_core:error] [pid 4256:tid 1696] [client 127.0.0.1:8260] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/
+[Wed Mar 04 22:30:43.411725 2015] [authz_core:error] [pid 4256:tid 1696] [client 127.0.0.1:8260] AH01630: client denied by server configuration: D:/Server/fantasalento.eu/public_html/favicon.ico

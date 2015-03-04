@@ -35,6 +35,43 @@
                     <?php echo JHTML::_('select.genericlist', $this->options, 'sc_formazione', 'onchange="show_mod(this.selectedIndex)"', 'value', 'text'); ?>
                 <input type="reset" value="Reset" onclick="resetta()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="submit" value="Accetta">
+<!--//                           INIZIO FACEBOOK SHARE-->
+
+
+
+<div id='fb-root'></div>
+    <script src='http://connect.facebook.net/en_US/all.js'></script>
+    <p><a onclick='postToFeed(); return false;'>Post to Feed</a></p>
+    <p id='msg'></p>
+
+    <script> 
+      FB.init({appId: "301448259962760	", status: true, cookie: true});
+
+      function postToFeed() {
+
+        // calling the API ...
+        var obj = {
+          method: 'feed',
+          link: 'http://www.fantasalento.it',
+//          picture: 'http://fbrell.com/f8.jpg',
+          name: 'Fanatasalento',
+          caption: 'Reference Documentation',
+          description: 'Using Dialogs to interact with users.'
+        };
+
+        function callback(response) {
+          document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+      }
+    
+    </script>
+
+
+
+
+<!--//                           FINE FACEBOOK SHARE-->
             </td>
         </tr>
     </table>
@@ -70,7 +107,7 @@
             <div style="background-image:URL('<?=$this->root?>components/com_jfantamanager/images/campo.jpg');width:450px;height:400px"><center>
                 <table class="campo">
                     <tr>
-                        <td><input type="hidden" name="txt_formazione" value=""/>
+                        <td width="150px"><input type="hidden" name="txt_formazione" value=""/>
                         </td>
                         <td id="portiere" width="150px"><?=$this->old_team[$indice]?>
                         </td>

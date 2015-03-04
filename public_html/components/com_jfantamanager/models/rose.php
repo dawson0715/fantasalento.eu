@@ -18,7 +18,7 @@ class jFantaManagerModelRose extends JModel
             if($lega==0)
                 $lega=1;
             
-            $query ="SELECT id,nome FROM `#__fanta_squadra` 
+            $query ="SELECT id,nome,bilancio FROM `#__fanta_squadra` 
                     WHERE `lega` = $lega";
             $db->setQuery( $query );
             $datisquadra = $db->loadObjectList();

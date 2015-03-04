@@ -23,34 +23,34 @@ class jFantaManagerViewInizializza extends JView
                 
                 /*
                 if ($user->partecipa!='1')
-                     $this->msg="COM_FANTACALCIO_PARTECIPA";
+                     $this->msg="COM_JFANTAMANAGER_PARTECIPA";
                 
                     $campionati=explode(';', $user->partecipa);
                 if(in_array(0, $campionati))
-                    $this->msg="COM_FANTACALCIO_NON_PARTECIPA";
+                    $this->msg="COM_JFANTAMANAGER_NON_PARTECIPA";
                 else if (count($campionati)>1)
                 {
                     $lega=JRequest::getVar('lega', '' , 'post');
                     if ($lega=='' || $lega==0)
                     {    
                         $this->legas=$this->get('Legas');
-                        $this->msg="COM_FANTACALCIO_PARTECIPA";
+                        $this->msg="COM_JFANTAMANAGER_PARTECIPA";
                     }
                     elseif(in_array($lega, $campionati))
                     {
                         $this->parametri = jFantaManagerHelper::getParameters($lega);
                     }
                     else
-                        $this->msg="COM_FANTACALCIO_PARTECIPA";
+                        $this->msg="COM_JFANTAMANAGER_PARTECIPA";
                 }
                 else//Partecipa solo ad un campionato quindi i parametri sono quelli giusti 
                     $this->parametri = jFantaManagerHelper::getParameters($campionati[0]);
                 */
                 
                 if($user->id<=0)
-                     $this->msg="COM_FANTACALCIO_PERMESSI_USER";
+                     $this->msg="COM_JFANTAMANAGER_PERMESSI_USER";
                 else if($this->get('Creata')>0)
-                    $this->msg="COM_FANTACALCIO_PERMESSI_EXIST";
+                    $this->msg="COM_JFANTAMANAGER_PERMESSI_EXIST";
 
                 if ($this->msg != '')
                 {
@@ -89,7 +89,7 @@ class jFantaManagerViewInizializza extends JView
                 
                 $document = &JFactory::getDocument();
                 $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'inizializza.css');
-                $document->addScriptDeclaration('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'inizializza.js');
+                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'inizializza.js');
 		parent::display($tpl);
 	}
 }

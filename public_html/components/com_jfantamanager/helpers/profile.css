@@ -107,8 +107,8 @@
     text-shadow: 1px 1px 0 #D66406;
 }
 .elem_dx table{margin: 5px;width: 250px;border: 2px solid lightgray}
-.elem_dx table tbody tr,.lista table tbody tr{background-color: white}
-.elem_dx table tbody tr.riga1,.lista table tbody tr.riga1{background-color: #DEDEDE}
+.elem_dx table tbody tr,.lista table tbody tr{background-color: white #DEDEDE !important}
+.elem_dx table tbody tr.riga1,.lista tr.riga1{background-color: #DEDEDE !important}
 .elem_dx thead,.lista th {
     background: url("../images/header.gif") repeat-x scroll 0 0 transparent;
     height: 29px;

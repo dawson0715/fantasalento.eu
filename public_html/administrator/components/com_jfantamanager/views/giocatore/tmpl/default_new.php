@@ -2,16 +2,16 @@
 <table class="giocatori">
     <tr>
         <th width="5">
-		<?php echo JText::_('COM_FANTACALCIO_GIOCATORE_HEADING_POS'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_GIOCATORE_HEADING_POS'); ?>
 	</th>
 	<th>
-		<?php echo JText::_('COM_FANTACALCIO_GIOCATORE_HEADING_NOME'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_GIOCATORE_HEADING_NOME'); ?>
 	</th>
         <th>
-		<?php echo JText::_('COM_FANTACALCIO_GIOCATORE_HEADING_SQUADRA'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_GIOCATORE_HEADING_SQUADRA'); ?>
 	</th>
         <th>
-		<?php echo JText::_('COM_FANTACALCIO_GIOCATORE_HEADING_VALORE_ATT'); ?>
+		<?php echo JText::_('COM_JFANTAMANAGER_GIOCATORE_HEADING_VALORE_ATT'); ?>
 	</th>
     </tr>
     <? foreach($this->table as $i => $riga): ?>

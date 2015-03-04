@@ -1,1 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?><form>	<fieldset>		<field                    name="id"                      type="text"                    class="readonly"                    label="COM_FANTACALCIO_LEGA_ID_LABEL"                    description ="COM_FANTACALCIO_LEGA_ID_DESC"                    size="10"                    default="0"                    readonly="true"                />                <field			name="nome"			type="text"			label="COM_FANTACALCIO_LEGA_NOME_LABEL"			description="COM_FANTACALCIO_LEGA_NOME_DESC"		/>                <field			name="logo"			type="media"			label="COM_FANTACALCIO_LEGA_LOGO_LABEL"			description="COM_FANTACALCIO_LOGO_NOME_DESC"		/>                <field			name="scontri_diretti"			type="radio"			label="COM_FANTACALCIO_LEGA_SCONTRI_LABEL"			description="COM_FANTACALCIO_LEGA_SCONTRI_DESC"                        default="0"		>                        <option value="1">Scontri diretti</option>                        <option value="0">Somma punti</option>                </field>                <field			name="partecipanti"			type="text"                        size="20"			label="COM_FANTACALCIO_LEGA_PARTECIPANTI_LABEL"			description="COM_FANTACALCIO_LEGA_PARTECIPANTI_DESC"                        default="0"		/>                <field			name="giornate"			type="list"                        size="1"			label="COM_FANTACALCIO_LEGA_GIORNATE_LABEL"			description="COM_FANTACALCIO_LEGA_GIORNATE_DESC"                        default="38"		>                    <option value="1">1</option>                    <option value="2">2</option>                    <option value="3">3</option>                    <option value="4">4</option>                    <option value="5">5</option>                    <option value="6">6</option>                    <option value="7">7</option>                    <option value="8">8</option>                    <option value="9">9</option>                    <option value="10">10</option>                    <option value="11">11</option>                    <option value="12">12</option>                    <option value="13">13</option>                    <option value="14">14</option>                    <option value="15">15</option>                    <option value="16">16</option>                    <option value="17">17</option>                    <option value="18">18</option>                    <option value="19">19</option>                    <option value="20">20</option>                    <option value="21">21</option>                    <option value="22">22</option>                    <option value="23">23</option>                    <option value="24">24</option>                    <option value="25">25</option>                    <option value="26">26</option>                    <option value="27">27</option>                    <option value="28">28</option>                    <option value="29">29</option>                    <option value="30">30</option>                    <option value="31">31</option>                    <option value="32">32</option>                    <option value="33">33</option>                    <option value="34">34</option>                    <option value="35">35</option>                    <option value="36">36</option>                    <option value="37">37</option>                    <option value="38">38</option>                </field>                <field			name="ritardo"			type="list"                        size="1"			label="COM_FANTACALCIO_LEGA_RITARDO_LABEL"			description="COM_FANTACALCIO_LEGA_RITARDO_DESC"                        default="0"		>                    <option value="0">0</option>                    <option value="1">1</option>                    <option value="2">2</option>                    <option value="3">3</option>                    <option value="4">4</option>                    <option value="5">5</option>                    <option value="6">6</option>                    <option value="7">7</option>                    <option value="8">8</option>                    <option value="9">9</option>                    <option value="10">10</option>                    <option value="11">11</option>                    <option value="12">12</option>                    <option value="13">13</option>                    <option value="14">14</option>                    <option value="15">15</option>                    <option value="16">16</option>                    <option value="17">17</option>                    <option value="18">18</option>                    <option value="19">19</option>                    <option value="20">20</option>                    <option value="21">21</option>                    <option value="22">22</option>                    <option value="23">23</option>                    <option value="24">24</option>                    <option value="25">25</option>                    <option value="26">26</option>                    <option value="27">27</option>                    <option value="28">28</option>                    <option value="29">29</option>                    <option value="30">30</option>                    <option value="31">31</option>                    <option value="32">32</option>                    <option value="33">33</option>                    <option value="34">34</option>                    <option value="35">35</option>                    <option value="36">36</option>                    <option value="37">37</option>                    <option value="38">38</option>                </field>                <field			name="crediti"			type="text"                        size="20"			label="COM_FANTACALCIO_LEGA_CREDITI_LABEL"			description="COM_FANTACALCIO_LEGA_CREDITI_DESC"                        default="250"		/>                <field			name="modificatore"			type="radio"			label="COM_FANTACALCIO_LEGA_MODIFICATORE_LABEL"			description="COM_FANTACALCIO_LEGA_MODIFICATORE_DESC"                        default="0"		>                        <option value="1">SI</option>                        <option value="0">NO</option>                </field>                <field			name="p_fissa"			type="radio"			label="COM_FANTACALCIO_LEGA_PFISSA_LABEL"			description="COM_FANTACALCIO_LEGA_PFISSA_DESC"                        default="0"		>                        <option value="1">SI</option>                        <option value="0">NO</option>                </field>                <field			name="sostituzioni"			type="text"                        size="20"			label="COM_FANTACALCIO_LEGA_SOSTITUZIONI_LABEL"			description="COM_FANTACALCIO_LEGA_SOSTITUZIONI_DESC"                        default="3"		>                </field>                <field			name="ruolo"			type="radio"			label="COM_FANTACALCIO_LEGA_RUOLO_LABEL"			description="COM_FANTACALCIO_LEGA_RUOLO_DESC"                        default="0"		>                        <option value="1">SI</option>                        <option value="0">NO</option>                </field>                <field			name="cambi"			type="text"                        size="20"			label="COM_FANTACALCIO_LEGA_CAMBI_LABEL"			description="COM_FANTACALCIO_LEGA_CAMBI_DESC"                        default="25"		>                </field>	</fieldset></form>
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+	<fieldset>
+		<field
+                    name="id"  
+                    type="text"
+                    class="readonly"
+                    label="COM_JFANTAMANAGER_LEGA_ID_LABEL"
+                    description ="COM_JFANTAMANAGER_LEGA_ID_DESC"
+                    size="10"
+                    default="0"
+                    readonly="true"
+                />
+                <field
+			name="nome"
+			type="text"
+			label="COM_JFANTAMANAGER_LEGA_NOME_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_NOME_DESC"
+		/>
+                <field
+			name="logo"
+			type="media"
+			label="COM_JFANTAMANAGER_LEGA_LOGO_LABEL"
+			description="COM_JFANTAMANAGER_LOGO_NOME_DESC"
+		/>
+                <field
+			name="scontri_diretti"
+			type="radio"
+			label="COM_JFANTAMANAGER_LEGA_SCONTRI_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_SCONTRI_DESC"
+                        default="0"
+		>
+                        <option value="1">Scontri diretti</option>
+                        <option value="0">Somma punti</option>
+                </field>
+                <field
+			name="partecipanti"
+			type="text"
+                        size="20"
+			label="COM_JFANTAMANAGER_LEGA_PARTECIPANTI_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_PARTECIPANTI_DESC"
+                        default="0"
+		/>
+                <field
+			name="giornate"
+			type="list"
+                        size="1"
+			label="COM_JFANTAMANAGER_LEGA_GIORNATE_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_GIORNATE_DESC"
+                        default="38"
+		>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                </field>
+                <field
+			name="ritardo"
+			type="list"
+                        size="1"
+			label="COM_JFANTAMANAGER_LEGA_RITARDO_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_RITARDO_DESC"
+                        default="0"
+		>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                </field>
+                <field
+			name="crediti"
+			type="text"
+                        size="20"
+			label="COM_JFANTAMANAGER_LEGA_CREDITI_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_CREDITI_DESC"
+                        default="250"
+		/>
+                <field
+			name="modificatore"
+			type="radio"
+			label="COM_JFANTAMANAGER_LEGA_MODIFICATORE_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_MODIFICATORE_DESC"
+                        default="0"
+		>
+                        <option value="1">SI</option>
+                        <option value="0">NO</option>
+                </field>
+                <field
+			name="p_fissa"
+			type="radio"
+			label="COM_JFANTAMANAGER_LEGA_PFISSA_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_PFISSA_DESC"
+                        default="0"
+		>
+                        <option value="1">SI</option>
+                        <option value="0">NO</option>
+                </field>
+                <field
+			name="sostituzioni"
+			type="text"
+                        size="20"
+			label="COM_JFANTAMANAGER_LEGA_SOSTITUZIONI_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_SOSTITUZIONI_DESC"
+                        default="3"
+		>
+                </field>
+                <field
+			name="ruolo"
+			type="radio"
+			label="COM_JFANTAMANAGER_LEGA_RUOLO_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_RUOLO_DESC"
+                        default="0"
+		>
+                        <option value="1">SI</option>
+                        <option value="0">NO</option>
+                </field>
+                <field
+			name="cambi"
+			type="text"
+                        size="20"
+			label="COM_JFANTAMANAGER_LEGA_CAMBI_LABEL"
+			description="COM_JFANTAMANAGER_LEGA_CAMBI_DESC"
+                        default="25"
+		>
+                </field>
+	</fieldset>
+</form>
+

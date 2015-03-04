@@ -78,7 +78,7 @@ class jFantaManagerModelSquadra extends JModelAdmin
             $squadra = JRequest::getVar('id','');
             $data = date('Y-m-d');
 
-            $query ="SELECT #__fanta_giocatore.id,#__fanta_giocatore.nome,pos,squadra, valore_acq, data_acq 
+            $query ="SELECT #__fanta_giocatore.id,#__fanta_giocatore.nome,pos,squadra, valore_acq, data_acq,valore_ces, data_ces 
                         FROM #__fanta_squadra, #__fanta_possiede, #__fanta_giocatore 
                         WHERE #__fanta_squadra.id = $squadra
                             AND #__fanta_possiede.squadra_id = #__fanta_squadra.id 

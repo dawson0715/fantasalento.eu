@@ -15,7 +15,7 @@ defined('_JEXEC') or die('Restricted Access');
 		</td>
                 <td>
                     <?php echo $item->nome; ?>
-<!--                    <a href="index.php?option=com_jfantamanager&view=squadra&layout=edit&id=<?=$item->id?>" title="<?php echo JText::sprintf('COM_FANTACALCIO_EDIT_SQUADRAS_TEAM', $this->escape($item->nome)); ?>" >
+<!--                    <a href="index.php?option=com_jfantamanager&view=squadra&layout=edit&id=<?=$item->id?>" title="<?php echo JText::sprintf('COM_JFANTAMANAGER_EDIT_SQUADRAS_TEAM', $this->escape($item->nome)); ?>" >
 			<?php echo $item->nome; ?>
                     </a>-->
 		</td>

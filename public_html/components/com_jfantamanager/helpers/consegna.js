@@ -33,7 +33,7 @@ function scrivi(id,pos,nome,squ)
             break;
         }              
     }
-    cosa="<img src='/images/com_fantacalcio/giocatori/t_"+squ.toLowerCase()+".png' width='75' alt='"+squ+"'><br><span>"+nome+"</span>"
+    cosa="<img src='/images/com_jfantamanager/giocatori/t_"+squ.toLowerCase()+".png' width='75' alt='"+squ+"'><br><span>"+nome+"</span>"
     rimuovi = formazione.indexOf(id, 0)
     if (rimuovi >= 0 )
     {//RIMUOVI

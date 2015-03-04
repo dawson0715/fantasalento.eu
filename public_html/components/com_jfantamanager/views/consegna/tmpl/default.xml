@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="COM_FANTACALCIO_VIEW_CONSEGNA_TITLE">
-		<message>COM_FANTACALCIO_VIEW_CONSEGNA_DESC</message>
+	<layout title="COM_JFANTAMANAGER_VIEW_CONSEGNA_TITLE">
+		<message>COM_JFANTAMANAGER_VIEW_CONSEGNA_DESC</message>
 	</layout>
         <fields name="request">
 		<fieldset name="request">
 			<field
 				name="lega"
 				type="leghe"
-				label="COM_FANTACALCIO_FIELD_LEGA_LABEL"
-				description="COM_FANTACALCIO_FIELD_LEGA_DESC"
+				label="COM_JFANTAMANAGER_FIELD_LEGA_LABEL"
+				description="COM_JFANTAMANAGER_FIELD_LEGA_DESC"
 				default="0"
 			/>
 		</fieldset>

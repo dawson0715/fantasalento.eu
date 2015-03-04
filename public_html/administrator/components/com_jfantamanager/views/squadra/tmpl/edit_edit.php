@@ -13,12 +13,26 @@ foreach ($this->lista as $i => $giocatore)
   echo "<tr class='row".($i % 2)."'>
               <td width=5>";
               if($i>=25)
-                  echo "<img height='20px' src='".JURI::root()."/components/com_jfantamanager/images/out.png'>";
-              else
+			  {
+                  echo "<img height='20px' src='".JURI::root()."/components/com_jfantamanager/images/out.png'>
+				  </td>
+              <td>
+                    $giocatore->nome
+              </td>
+              <td>
+                    $giocatore->valore_ces
+              </td>
+              <td>
+                    $giocatore->data_ces
+              </td>
+        </tr>";
+			  }
+			  else
+			  {
                   echo "  <a id='data' class='modal' href='index.php?option=com_jfantamanager&view=giocatore&tmpl=component&giocatore_id=$giocatore->id&squadra_id=$this->squadra_id' rel=\"{handler: 'iframe', size: {x: 600, y: 450}}\">
                             <span class='hasTip' title=\"tip title::tip text\"><img height='20px' src='".JURI::root()."/components/com_jfantamanager/images/in.png'></span>
-                        </a>";
-              echo "</td>
+                        </a>
+			  </td>
               <td>
                     $giocatore->nome
               </td>
@@ -29,6 +43,7 @@ foreach ($this->lista as $i => $giocatore)
                     $giocatore->data_acq
               </td>
         </tr>";
+			  }
 }
 ?>
 </table>

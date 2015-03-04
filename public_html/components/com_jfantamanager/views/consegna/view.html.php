@@ -23,18 +23,18 @@ class jFantaManagerViewConsegna extends JView
                 $this->parametri = jFantaManagerHelper::getParameters(1);
                 
                 if($user->id<=0)
-                     $this->msg="COM_FANTACALCIO_PERMESSI_USER";
+                     $this->msg="COM_JFANTAMANAGER_PERMESSI_USER";
                 else if ($this->permessi['permesso']==0)
-                    $this->msg="COM_FANTACALCIO_PERMESSI_PERMESSO";
+                    $this->msg="COM_JFANTAMANAGER_PERMESSI_PERMESSO";
                 else if ($data > date($this->permessi['data']) && $aid)
                 {
-                    $this->msg="COM_FANTACALCIO_PERMESSI_DATA";
+                    $this->msg="COM_JFANTAMANAGER_PERMESSI_DATA";
                     $this->scaduto='0';
                     $this->consegnate=jFantaManagerHelper::getConsegnateList();
                 }
                 else if((date($data) == date($this->permessi['data'])) && (date($ora) > date($this->permessi['ora'])) && $aid)
                 {
-                    $this->msg="COM_FANTACALCIO_PERMESSI_ORA";//.date($this->permessi['cal_data']) . " ALLE ORE: " . date($this->permessi['cal_ora']) . "</span>";
+                    $this->msg="COM_JFANTAMANAGER_PERMESSI_ORA";//.date($this->permessi['cal_data']) . " ALLE ORE: " . date($this->permessi['cal_ora']) . "</span>";
                     $this->scaduto='1';
                     $this->consegnate=jFantaManagerHelper::getConsegnateList();
                 }
@@ -88,7 +88,7 @@ class jFantaManagerViewConsegna extends JView
                 //include css file
                 $document = &JFactory::getDocument();
                 $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'consegna.css');
-                $document->addScriptDeclaration('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'consegna.js');
+                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'consegna.js');
 		// Display the view
 		parent::display($tpl);
 	}

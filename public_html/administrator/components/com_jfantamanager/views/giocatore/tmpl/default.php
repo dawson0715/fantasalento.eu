@@ -25,7 +25,7 @@ JHtml::_('behavior.tooltip');
         </fieldset>
     </div>
     <div class="fltlft" style="width: 280px;background-image: url('<?=JURI::root();?>components/com_jfantamanager/images/scambia.png');background-position: 280px 0">
-        <fieldset class="panelform"><!-- COM_FANTACALCIO_GIOCATORE_CHANGE -->
+        <fieldset class="panelform"><!-- COM_JFANTAMANAGER_GIOCATORE_CHANGE -->
             <legend><?php echo JText::_( 'IN' ); ?></legend>
             <ul class="adminformlist">
                 <?php foreach($this->form->getFieldset('giocatore_out') as $field): ?>
