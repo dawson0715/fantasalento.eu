@@ -1,8 +1,6 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );// No direct access
 
-jimport( 'joomla.application.component.model' );
-
-class jFantaManagerModelAll extends JModel
+class jFantaManagerModelAll extends JModelItem
 {
 	/**
 	 * @var string msg
@@ -13,8 +11,8 @@ class jFantaManagerModelAll extends JModel
         function getSquadre()
         {
             $db =& JFactory::getDBO();
-            $lega=JRequest::getVar('lega', '');
-            $giornata=JRequest::getVar('giornata', '');
+            $lega=JRequest::getVar('lega', 1);
+            $giornata=JRequest::getVar('giornata', 1);
             
             if($lega==0)
                 $lega=1;
@@ -165,8 +163,8 @@ class jFantaManagerModelAll extends JModel
         
         public static function getGiornata()
 	{
-            $db     =& JFactory::getDBO();
-            $data_fine = date('Y-m-d', mktime(0,0,0,date(m),date(d)-2,date(Y)));
+            $db = JFactory::getDBO();
+            $data_fine = date('Y-m-d', mktime(0,0,0,date('m'),date('d')-2,date('Y')));
             
             //$query ="SELECT MIN(`giornata`) as giornata FROM `#__fanta_calendario` WHERE `data` >= '$data_fine'";
             $query ="SELECT MAX(`giornata`) as giornata FROM `#__fanta_impiega`";

@@ -19,7 +19,7 @@ jimport( 'joomla.application.component.model' );
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class jFantaManagerModelConsegna extends JModel
+class jFantaManagerModelConsegna extends JModelItem
 {
 	protected $formazione;
         /**

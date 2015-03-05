@@ -6,11 +6,11 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  */
-class jFantaManagerViewFreeGiocatori extends JView
+class jFantaManagerViewFreeGiocatori extends JViewLegacy
 {
-	// Overwriting JView display method
+	// Overwriting JViewLegacy display method
 	function display($tpl = null)
 	{
                 $this->portieri         = jFantaManagerModelFreegiocatori::FreeGiocatoriByPos('P');
@@ -31,8 +31,8 @@ class jFantaManagerViewFreeGiocatori extends JView
                 
                 $this->root=JURI::root();
                 $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'freegiocatori.css');
-                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'freegiocatori.js');
+                $document->addStyleSheet('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'freegiocatori.css');
+                $document->addScript('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'freegiocatori.js');
 		// Display the view
 		parent::display($tpl);
 	}

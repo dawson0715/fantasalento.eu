@@ -6,16 +6,16 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  */
-class jFantaManagerViewInizializza extends JView
+class jFantaManagerViewInizializza extends JViewLegacy
 {
 
         protected $_item;
 //        data;
 //	protected $form;
 
-	// Overwriting JView display method
+	// Overwriting JViewLegacy display method
 	function display($tpl = null)
 	{
                 $this->permessi = jFantaManagerHelper::getPermessi();
@@ -88,8 +88,8 @@ class jFantaManagerViewInizializza extends JView
 		// Display the view
                 
                 $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'inizializza.css');
-                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'inizializza.js');
+                $document->addStyleSheet('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'inizializza.css');
+                $document->addScript('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'inizializza.js');
 		parent::display($tpl);
 	}
 }

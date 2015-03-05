@@ -2,13 +2,11 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
-// import Joomla controller library
-jimport('joomla.application.component.controller');
-require_once JPATH_COMPONENT.'/helpers/fantacalcio.php';
+// require_once JPATH_COMPONENT.'/helpers/fantacalcio.php';
 /**
  * Hello World Component Controller
  */
-class jFantaManagerController extends JController
+class jFantaManagerController extends JControllerLegacy
 {
     function display($cachable = false)
 	{

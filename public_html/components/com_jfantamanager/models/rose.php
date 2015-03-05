@@ -8,7 +8,7 @@ jimport('joomla.application.component.model');
 /**
  * HelloWorld Model
  */
-class jFantaManagerModelRose extends JModel
+class jFantaManagerModelRose extends JModelItem
 {
         
         function getSquadre()

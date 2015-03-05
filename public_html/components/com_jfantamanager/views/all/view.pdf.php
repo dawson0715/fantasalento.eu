@@ -6,11 +6,11 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  */
-class FantacalcioViewAll extends JView
+class FantacalcioViewAll extends JViewLegacy
 {
-	// Overwriting JView display method
+	// Overwriting JViewLegacy display method
 	function display($tpl = null)
 	{
 //                $giornata=JRequest::getVar('giornata', '');

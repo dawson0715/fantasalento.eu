@@ -6,17 +6,19 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  */
-class jFantaManagerViewRose extends JView
+class jFantaManagerViewRose extends JViewLegacy
 {
-	// Overwriting JView display method
+	// Overwriting JViewLegacy display method
 	function display($tpl = null)
 	{
 		// Assign data to the view
 		$squadre=$this->get('Squadre');
-                foreach ($squadre as $i => $squadra)
-                    $lista[$squadra->id] = jFantaManagerModelRose::getGiocatori($squadra->id);
+		$lista = "";
+		
+		foreach ($squadre as $i => $squadra)
+        	$lista[$squadra->id] = jFantaManagerModelRose::getGiocatori($squadra->id);
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))
@@ -29,7 +31,7 @@ class jFantaManagerViewRose extends JView
 
 
 		$document = &JFactory::getDocument();
-		$document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'visualizza.css');
+		$document->addStyleSheet('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'visualizza.css');
 		// Display the view
 		parent::display($tpl);
 	}

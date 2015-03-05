@@ -6,11 +6,11 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  */
-class jFantaManagerViewConsegna extends JView
+class jFantaManagerViewConsegna extends JViewLegacy
 {
-        // Overwriting JView display method
+        // Overwriting JViewLegacy display method
         function display($tpl = null)
 	{
                 $user = &JFactory::getUser();
@@ -87,8 +87,8 @@ class jFantaManagerViewConsegna extends JView
                 $this->root=JURI::root();
                 //include css file
                 $document = &JFactory::getDocument();
-                $document->addStyleSheet('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'consegna.css');
-                $document->addScript('components'.DS.'com_jfantamanager'.DS.'helpers'.DS.'consegna.js');
+                $document->addStyleSheet('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'consegna.css');
+                $document->addScript('components'.DIRECTORY_SEPARATOR.'com_jfantamanager'.DIRECTORY_SEPARATOR.'helpers'.DIRECTORY_SEPARATOR.'consegna.js');
 		// Display the view
 		parent::display($tpl);
 	}

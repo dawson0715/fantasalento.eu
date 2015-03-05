@@ -19,7 +19,7 @@ jimport( 'joomla.application.component.model' );
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class jFantaManagerModelInizializza extends JModel
+class jFantaManagerModelInizializza extends JModelItem
 {
 	
         /**

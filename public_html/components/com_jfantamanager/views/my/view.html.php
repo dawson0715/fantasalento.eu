@@ -13,12 +13,12 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 jimport( 'joomla.application.component.view');
 
 /**
- * HTML View class for the HelloWorld Component
+ * HTML View class for the jFantaManager Component
  *
- * @package    HelloWorld
+ * @package    jFantaManager
  */
 
-class FantaCalcioViewFantaCalcio extends JView
+class FantaCalcioViewFantaCalcio extends JViewLegacy
 {
     function display($tpl = null)
     {
